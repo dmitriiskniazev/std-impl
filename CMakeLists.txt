@@ -15,7 +15,10 @@ if(CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
 endif()
 
 add_library(std_impl)
-target_sources(std_impl PUBLIC FILE_SET CXX_MODULES FILES
+target_sources(std_impl
+    PUBLIC
+        FILE_SET CXX_MODULES FILES
+            src/assert/assert.cppm
             src/memory/default_delete/detail/concepts.cppm
             src/memory/default_delete/interface.cppm
             src/memory/default_delete/impl.cppm
@@ -81,60 +84,94 @@ target_sources(std_impl PUBLIC FILE_SET CXX_MODULES FILES
             src/optional/make_optional/make_optional.cppm
             src/optional/make_optional/interface.cppm
             src/optional/make_optional/impl.cppm
-    src/std_impl.cppm
+            src/optional/optional.cppm
+            src/expected/bad_expected_access/interface.cppm
+            src/expected/bad_expected_access/impl.cppm
+            src/expected/bad_expected_access.cppm
+            src/expected/unexpected/interface.cppm
+            src/expected/unexpected/impl.cppm
+            src/expected/unexpected.cppm
+            src/expected/expected/storage/impl/concepts.cppm
+            src/expected/expected/storage/interface.cppm
+            src/expected/expected/storage/impl/accessors.cppm
+            src/expected/expected/storage/impl/lifetime.cppm
+            src/expected/expected/storage/impl.cppm
+            src/expected/expected/storage/storage.cppm
+            src/expected/expected/interface.cppm
+            src/expected/expected/impl.cppm
+            src/expected/expected/impl.void.cppm
+            src/expected/expected/expected.cppm
+            src/expected/expected.cppm
+            src/std_impl.cppm
 )
 target_include_directories(std_impl PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-add_executable(std_impl_memory_smoke_test "tests/memory/smoke_test.cpp")
-target_link_libraries(std_impl_memory_smoke_test PRIVATE std_impl)
-add_test(NAME std_impl_memory_smoke_test COMMAND std_impl_memory_smoke_test)
-add_executable(std_impl_memory_default_delete_test "tests/memory/default_delete_test.cpp")
-target_link_libraries(std_impl_memory_default_delete_test PRIVATE std_impl)
-add_test(NAME std_impl_memory_default_delete_test COMMAND std_impl_memory_default_delete_test)
-add_executable(std_impl_memory_unique_ptr_test "tests/memory/unique_ptr_test.cpp")
-target_link_libraries(std_impl_memory_unique_ptr_test PRIVATE std_impl)
-add_test(NAME std_impl_memory_unique_ptr_test COMMAND std_impl_memory_unique_ptr_test)
-add_executable(std_impl_memory_make_unique_test "tests/memory/make_unique_test.cpp")
-target_link_libraries(std_impl_memory_make_unique_test PRIVATE std_impl)
-add_test(NAME std_impl_memory_make_unique_test COMMAND std_impl_memory_make_unique_test)
-add_executable(std_impl_memory_shared_ptr_test "tests/memory/shared_ptr_test.cpp")
-target_link_libraries(std_impl_memory_shared_ptr_test PRIVATE std_impl)
-add_test(NAME std_impl_memory_shared_ptr_test COMMAND std_impl_memory_shared_ptr_test)
-add_executable(std_impl_memory_weak_ptr_test "tests/memory/weak_ptr_test.cpp")
-target_link_libraries(std_impl_memory_weak_ptr_test PRIVATE std_impl)
-add_test(NAME std_impl_memory_weak_ptr_test COMMAND std_impl_memory_weak_ptr_test)
-add_executable(std_impl_memory_make_shared_test "tests/memory/make_shared_test.cpp")
-target_link_libraries(std_impl_memory_make_shared_test PRIVATE std_impl)
-add_test(NAME std_impl_memory_make_shared_test COMMAND std_impl_memory_make_shared_test)
-add_executable(std_impl_memory_allocate_shared_test "tests/memory/allocate_shared_test.cpp")
-target_link_libraries(std_impl_memory_allocate_shared_test PRIVATE std_impl)
-add_test(NAME std_impl_memory_allocate_shared_test COMMAND std_impl_memory_allocate_shared_test)
-add_executable(std_impl_memory_shared_ptr_cpp26_test "tests/memory/shared_ptr_cpp26_test.cpp")
-target_link_libraries(std_impl_memory_shared_ptr_cpp26_test PRIVATE std_impl)
-add_test(NAME std_impl_memory_shared_ptr_cpp26_test COMMAND std_impl_memory_shared_ptr_cpp26_test)
-add_executable(std_impl_memory_enable_shared_from_this_test "tests/memory/enable_shared_from_this_test.cpp")
-target_link_libraries(std_impl_memory_enable_shared_from_this_test PRIVATE std_impl)
-add_test(NAME std_impl_memory_enable_shared_from_this_test COMMAND std_impl_memory_enable_shared_from_this_test)
-add_executable(std_impl_optional_smoke_test "tests/optional/smoke_test.cpp")
-target_link_libraries(std_impl_optional_smoke_test PRIVATE std_impl)
-add_test(NAME std_impl_optional_smoke_test COMMAND std_impl_optional_smoke_test)
-add_executable(std_impl_optional_nullopt_test "tests/optional/nullopt_test.cpp")
-target_link_libraries(std_impl_optional_nullopt_test PRIVATE std_impl)
-add_test(NAME std_impl_optional_nullopt_test COMMAND std_impl_optional_nullopt_test)
-add_executable(std_impl_optional_bad_optional_access_test "tests/optional/bad_optional_access_test.cpp")
-target_link_libraries(std_impl_optional_bad_optional_access_test PRIVATE std_impl)
-add_test(NAME std_impl_optional_bad_optional_access_test COMMAND std_impl_optional_bad_optional_access_test)
-add_executable(std_impl_optional_optional_test "tests/optional/optional_test.cpp")
-target_link_libraries(std_impl_optional_optional_test PRIVATE std_impl)
-add_test(NAME std_impl_optional_optional_test COMMAND std_impl_optional_optional_test)
-add_executable(std_impl_optional_make_optional_test "tests/optional/make_optional_test.cpp")
-target_link_libraries(std_impl_optional_make_optional_test PRIVATE std_impl)
-add_test(NAME std_impl_optional_make_optional_test COMMAND std_impl_optional_make_optional_test)
-add_executable(std_impl_optional_optional_ref_test "tests/optional/optional_ref_test.cpp")
-target_link_libraries(std_impl_optional_optional_ref_test PRIVATE std_impl)
-add_test(NAME std_impl_optional_optional_ref_test COMMAND std_impl_optional_optional_ref_test)
-add_executable(std_impl_memory_unique_ptr "examples/memory/unique_ptr.cpp")
-target_link_libraries(std_impl_memory_unique_ptr PRIVATE std_impl)
-add_executable(std_impl_memory_shared_ptr "examples/memory/shared_ptr.cpp")
-target_link_libraries(std_impl_memory_shared_ptr PRIVATE std_impl)
-add_executable(std_impl_optional_optional "examples/optional/optional.cpp")
-target_link_libraries(std_impl_optional_optional PRIVATE std_impl)
+
+set(STD_IMPL_TEST_DEPS std_impl)
+
+set(STD_IMPL_MEMORY_TESTS
+    memory/smoke_test
+    memory/default_delete_test
+    memory/unique_ptr_test
+    memory/make_unique_test
+    memory/shared_ptr_test
+    memory/weak_ptr_test
+    memory/make_shared_test
+    memory/allocate_shared_test
+    memory/shared_ptr_cpp26_test
+    memory/enable_shared_from_this_test
+)
+
+foreach(rel_path IN LISTS STD_IMPL_MEMORY_TESTS)
+    string(REPLACE "/" "_" stem "${rel_path}")
+    set(target "std_impl_${stem}")
+    add_executable(${target} "tests/${rel_path}.cpp")
+    target_link_libraries(${target} PRIVATE ${STD_IMPL_TEST_DEPS})
+    add_test(NAME ${target} COMMAND ${target})
+endforeach()
+
+set(STD_IMPL_OPTIONAL_TESTS
+    optional/smoke_test
+    optional/nullopt_test
+    optional/bad_optional_access_test
+    optional/optional_test
+    optional/make_optional_test
+    optional/optional_ref_test
+)
+
+foreach(rel_path IN LISTS STD_IMPL_OPTIONAL_TESTS)
+    string(REPLACE "/" "_" stem "${rel_path}")
+    set(target "std_impl_${stem}")
+    add_executable(${target} "tests/${rel_path}.cpp")
+    target_link_libraries(${target} PRIVATE ${STD_IMPL_TEST_DEPS})
+    add_test(NAME ${target} COMMAND ${target})
+endforeach()
+
+set(STD_IMPL_EXPECTED_TESTS
+    expected/smoke_test
+    expected/bad_expected_access_test
+    expected/unexpected_test
+    expected/expected_test
+    expected/expected_void_test
+)
+
+foreach(rel_path IN LISTS STD_IMPL_EXPECTED_TESTS)
+    string(REPLACE "/" "_" stem "${rel_path}")
+    set(target "std_impl_${stem}")
+    add_executable(${target} "tests/${rel_path}.cpp")
+    target_link_libraries(${target} PRIVATE ${STD_IMPL_TEST_DEPS})
+    add_test(NAME ${target} COMMAND ${target})
+endforeach()
+
+set(STD_IMPL_EXAMPLES
+    memory/unique_ptr
+    memory/shared_ptr
+    optional/optional
+    expected/expected
+)
+
+foreach(rel_path IN LISTS STD_IMPL_EXAMPLES)
+    string(REPLACE "/" "_" stem "${rel_path}")
+    set(target "std_impl_${stem}")
+    add_executable(${target} "examples/${rel_path}.cpp")
+    target_link_libraries(${target} PRIVATE ${STD_IMPL_TEST_DEPS})
+endforeach()
