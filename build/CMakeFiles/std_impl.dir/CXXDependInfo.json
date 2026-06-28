@@ -1,0 +1,1473 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "Clang",
+	"compiler-simulate-id" : "",
+	"config" : "",
+	"cxx-modules" : 
+	{
+		"CMakeFiles/std_impl.dir/src/assert/assert.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/assert",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/assert/assert.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/expected/bad_expected_access.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/expected",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/expected/bad_expected_access.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/expected/bad_expected_access/impl.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/expected/bad_expected_access",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/expected/bad_expected_access/impl.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/expected/bad_expected_access/interface.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/expected/bad_expected_access",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/expected/bad_expected_access/interface.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/expected/expected.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/expected",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/expected/expected.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/expected/expected/expected.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/expected/expected",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/expected/expected/expected.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/expected/expected/impl.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/expected/expected",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/expected/expected/impl.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/expected/expected/impl.void.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/expected/expected",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/expected/expected/impl.void.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/expected/expected/interface.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/expected/expected",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/expected/expected/interface.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/expected/expected/storage/impl.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/expected/expected/storage",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/expected/expected/storage/impl.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/expected/expected/storage/impl/accessors.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/expected/expected/storage/impl",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/expected/expected/storage/impl/accessors.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/expected/expected/storage/impl/concepts.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/expected/expected/storage/impl",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/expected/expected/storage/impl/concepts.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/expected/expected/storage/impl/lifetime.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/expected/expected/storage/impl",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/expected/expected/storage/impl/lifetime.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/expected/expected/storage/interface.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/expected/expected/storage",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/expected/expected/storage/interface.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/expected/expected/storage/storage.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/expected/expected/storage",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/expected/expected/storage/storage.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/expected/unexpected.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/expected",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/expected/unexpected.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/expected/unexpected/impl.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/expected/unexpected",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/expected/unexpected/impl.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/expected/unexpected/interface.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/expected/unexpected",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/expected/unexpected/interface.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/format/format.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/format",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/format/format.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/format/shared_ptr.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/format",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/format/shared_ptr.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/format/unique_ptr.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/format",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/format/unique_ptr.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/format/weak_ptr.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/format",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/format/weak_ptr.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/allocate_shared.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/allocate_shared.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/bad_weak_ptr.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/bad_weak_ptr.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/bad_weak_ptr/impl.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/bad_weak_ptr",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/bad_weak_ptr/impl.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/bad_weak_ptr/interface.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/bad_weak_ptr",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/bad_weak_ptr/interface.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/default_delete.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/default_delete.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/default_delete/detail/concepts.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/default_delete/detail",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/default_delete/detail/concepts.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/default_delete/impl.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/default_delete",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/default_delete/impl.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/default_delete/interface.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/default_delete",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/default_delete/interface.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/enable_shared_from_this.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/enable_shared_from_this.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/enable_shared_from_this/interface.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/enable_shared_from_this",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/enable_shared_from_this/interface.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/make_shared.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/make_shared.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/make_unique.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/make_unique.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/memory.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/memory.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/pointer_cast.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/pointer_cast.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/shared_ptr.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/shared_ptr.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/shared_ptr/detail/concepts.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/shared_ptr/detail",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/shared_ptr/detail/concepts.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/shared_ptr/detail/control_block.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/shared_ptr/detail",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/shared_ptr/detail/control_block.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/shared_ptr/detail/control_block/impl.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/shared_ptr/detail/control_block",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/shared_ptr/detail/control_block/impl.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/shared_ptr/detail/control_block/impl/allocated.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/shared_ptr/detail/control_block/impl",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/shared_ptr/detail/control_block/impl/allocated.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/shared_ptr/detail/control_block/impl/base.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/shared_ptr/detail/control_block/impl",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/shared_ptr/detail/control_block/impl/base.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/shared_ptr/detail/control_block/impl/deleter.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/shared_ptr/detail/control_block/impl",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/shared_ptr/detail/control_block/impl/deleter.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/shared_ptr/detail/control_block/impl/object.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/shared_ptr/detail/control_block/impl",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/shared_ptr/detail/control_block/impl/object.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/shared_ptr/detail/control_block/impl/pointer.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/shared_ptr/detail/control_block/impl",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/shared_ptr/detail/control_block/impl/pointer.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/shared_ptr/detail/control_block/interface.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/shared_ptr/detail/control_block",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/shared_ptr/detail/control_block/interface.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/shared_ptr/impl.array.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/shared_ptr",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/shared_ptr/impl.array.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/shared_ptr/impl.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/shared_ptr",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/shared_ptr/impl.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/shared_ptr/interface.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/shared_ptr",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/shared_ptr/interface.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/unique_ptr.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/unique_ptr.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/unique_ptr/detail/concepts.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/unique_ptr/detail",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/unique_ptr/detail/concepts.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/unique_ptr/detail/pointer.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/unique_ptr/detail",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/unique_ptr/detail/pointer.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/unique_ptr/detail/storage.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/unique_ptr/detail",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/unique_ptr/detail/storage.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/unique_ptr/detail/storage/impl.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/unique_ptr/detail/storage",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/unique_ptr/detail/storage/impl.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/unique_ptr/detail/storage/impl/accessors.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/unique_ptr/detail/storage/impl",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/unique_ptr/detail/storage/impl/accessors.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/unique_ptr/detail/storage/impl/ctor.pointer.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/unique_ptr/detail/storage/impl",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/unique_ptr/detail/storage/impl/ctor.pointer.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/unique_ptr/detail/storage/impl/ctor.trivial.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/unique_ptr/detail/storage/impl",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/unique_ptr/detail/storage/impl/ctor.trivial.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/unique_ptr/detail/storage/interface.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/unique_ptr/detail/storage",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/unique_ptr/detail/storage/interface.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/unique_ptr/impl.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/unique_ptr",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/unique_ptr/impl.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/unique_ptr/interface.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/unique_ptr",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/unique_ptr/interface.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/weak_ptr.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/weak_ptr.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/weak_ptr/impl.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/weak_ptr",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/weak_ptr/impl.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/memory/weak_ptr/interface.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/memory/weak_ptr",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/weak_ptr/interface.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/optional/bad_optional_access/bad_optional_access.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/optional/bad_optional_access",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/bad_optional_access/bad_optional_access.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/optional/bad_optional_access/impl.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/optional/bad_optional_access",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/bad_optional_access/impl.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/optional/bad_optional_access/interface.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/optional/bad_optional_access",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/bad_optional_access/interface.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/optional/make_optional/impl.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/optional/make_optional",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/make_optional/impl.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/optional/make_optional/interface.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/optional/make_optional",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/make_optional/interface.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/optional/make_optional/make_optional.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/optional/make_optional",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/make_optional/make_optional.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/optional/optional.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/optional",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/optional.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/optional/optional/impl/ctors.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/optional/optional/impl",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/optional/impl/ctors.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/optional/optional/impl/modifiers.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/optional/optional/impl",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/optional/impl/modifiers.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/optional/optional/impl/monadic.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/optional/optional/impl",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/optional/impl/monadic.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/optional/optional/impl/observers.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/optional/optional/impl",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/optional/impl/observers.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/optional/optional/impl/ref.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/optional/optional/impl",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/optional/impl/ref.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/optional/optional/interface.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/optional/optional",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/optional/interface.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/optional/optional/optional.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/optional/optional",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/optional/optional.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/optional/optional/storage/impl.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/optional/optional/storage",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/optional/storage/impl.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/optional/optional/storage/impl/accessors.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/optional/optional/storage/impl",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/optional/storage/impl/accessors.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/optional/optional/storage/impl/concepts.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/optional/optional/storage/impl",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/optional/storage/impl/concepts.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/optional/optional/storage/impl/ctors.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/optional/optional/storage/impl",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/optional/storage/impl/ctors.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/optional/optional/storage/impl/lifetime.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/optional/optional/storage/impl",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/optional/storage/impl/lifetime.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/optional/optional/storage/interface.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/optional/optional/storage",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/optional/storage/interface.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/optional/optional/storage/storage.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src/optional/optional/storage",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/optional/storage/storage.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		},
+		"CMakeFiles/std_impl.dir/src/std_impl.cppm.o" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : [],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+			],
+			"name" : "CXX_MODULES",
+			"relative-directory" : "src",
+			"source" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/std_impl.cppm",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		}
+	},
+	"database-info" : null,
+	"dir-cur-bld" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/build",
+	"dir-cur-src" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl",
+	"dir-top-bld" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/build",
+	"dir-top-src" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : 
+	[
+		"/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/build/CMakeFiles/__cmake_cxx_std_23.dir"
+	],
+	"module-dir" : "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/build/CMakeFiles/std_impl.dir",
+	"sources" : {}
+}

@@ -1,0 +1,20 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles/std_impl_expected_unexpected_test.dir/tests/expected/unexpected_test.cpp.o",
+      "requires": [
+        {
+          "logical-name": "std"
+        },
+        {
+          "logical-name": "std_impl"
+        },
+        {
+          "logical-name": "std_impl.assert"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

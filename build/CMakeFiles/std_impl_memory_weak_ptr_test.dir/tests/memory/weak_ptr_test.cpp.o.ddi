@@ -1,0 +1,23 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles/std_impl_memory_weak_ptr_test.dir/tests/memory/weak_ptr_test.cpp.o",
+      "requires": [
+        {
+          "logical-name": "std"
+        },
+        {
+          "logical-name": "std_impl"
+        },
+        {
+          "logical-name": "std_impl.assert"
+        },
+        {
+          "logical-name": "std_impl.format"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

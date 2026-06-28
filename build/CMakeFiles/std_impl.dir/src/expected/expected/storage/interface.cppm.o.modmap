@@ -1,0 +1,4 @@
+-x c++-module
+-fmodule-output="CMakeFiles/std_impl.dir/std_impl.expected-expected.storage.interface.pcm"
+-fmodule-file="std=CMakeFiles/__cmake_cxx_std_23.dir/std.pcm"
+-fmodule-file="std_impl.expected:expected.storage.impl.concepts=CMakeFiles/std_impl.dir/std_impl.expected-expected.storage.impl.concepts.pcm"

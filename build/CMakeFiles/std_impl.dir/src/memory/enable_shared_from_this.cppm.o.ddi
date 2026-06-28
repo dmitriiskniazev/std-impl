@@ -1,0 +1,24 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles/std_impl.dir/src/memory/enable_shared_from_this.cppm.o",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "std_impl.memory:enable_shared_from_this",
+          "source-path": "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/enable_shared_from_this.cppm"
+        }
+      ],
+      "requires": [
+        {
+          "logical-name": "std_impl.memory:enable_shared_from_this.interface"
+        },
+        {
+          "logical-name": "std_impl.memory:bad_weak_ptr"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

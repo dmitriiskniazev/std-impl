@@ -1,0 +1,1768 @@
+{
+	"modules" : {},
+	"references" : 
+	{
+		"std" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/__cmake_cxx_std_23.dir/std.pcm"
+		},
+		"std.compat" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/__cmake_cxx_std_23.dir/std.compat.pcm"
+		},
+		"std_impl" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.pcm"
+		},
+		"std_impl.assert" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.assert.pcm"
+		},
+		"std_impl.expected" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.expected.pcm"
+		},
+		"std_impl.expected:bad_expected_access" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.expected-bad_expected_access.pcm"
+		},
+		"std_impl.expected:bad_expected_access.impl" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.expected-bad_expected_access.impl.pcm"
+		},
+		"std_impl.expected:bad_expected_access.interface" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.expected-bad_expected_access.interface.pcm"
+		},
+		"std_impl.expected:expected" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.expected-expected.pcm"
+		},
+		"std_impl.expected:expected.impl" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.expected-expected.impl.pcm"
+		},
+		"std_impl.expected:expected.impl.void_spec" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.expected-expected.impl.void_spec.pcm"
+		},
+		"std_impl.expected:expected.interface" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.expected-expected.interface.pcm"
+		},
+		"std_impl.expected:expected.storage" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.expected-expected.storage.pcm"
+		},
+		"std_impl.expected:expected.storage.impl" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.expected-expected.storage.impl.pcm"
+		},
+		"std_impl.expected:expected.storage.impl.accessors" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.expected-expected.storage.impl.accessors.pcm"
+		},
+		"std_impl.expected:expected.storage.impl.concepts" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.expected-expected.storage.impl.concepts.pcm"
+		},
+		"std_impl.expected:expected.storage.impl.lifetime" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.expected-expected.storage.impl.lifetime.pcm"
+		},
+		"std_impl.expected:expected.storage.interface" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.expected-expected.storage.interface.pcm"
+		},
+		"std_impl.expected:unexpected" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.expected-unexpected.pcm"
+		},
+		"std_impl.expected:unexpected.impl" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.expected-unexpected.impl.pcm"
+		},
+		"std_impl.expected:unexpected.interface" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.expected-unexpected.interface.pcm"
+		},
+		"std_impl.format" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.format.pcm"
+		},
+		"std_impl.format:shared_ptr" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.format-shared_ptr.pcm"
+		},
+		"std_impl.format:unique_ptr" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.format-unique_ptr.pcm"
+		},
+		"std_impl.format:weak_ptr" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.format-weak_ptr.pcm"
+		},
+		"std_impl.memory" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory.pcm"
+		},
+		"std_impl.memory:allocate_shared" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-allocate_shared.pcm"
+		},
+		"std_impl.memory:bad_weak_ptr" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-bad_weak_ptr.pcm"
+		},
+		"std_impl.memory:bad_weak_ptr.impl" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-bad_weak_ptr.impl.pcm"
+		},
+		"std_impl.memory:bad_weak_ptr.interface" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-bad_weak_ptr.interface.pcm"
+		},
+		"std_impl.memory:default_delete" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-default_delete.pcm"
+		},
+		"std_impl.memory:default_delete.detail.concepts" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-default_delete.detail.concepts.pcm"
+		},
+		"std_impl.memory:default_delete.impl" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-default_delete.impl.pcm"
+		},
+		"std_impl.memory:default_delete.interface" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-default_delete.interface.pcm"
+		},
+		"std_impl.memory:enable_shared_from_this" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-enable_shared_from_this.pcm"
+		},
+		"std_impl.memory:enable_shared_from_this.interface" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-enable_shared_from_this.interface.pcm"
+		},
+		"std_impl.memory:make_shared" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-make_shared.pcm"
+		},
+		"std_impl.memory:make_unique" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-make_unique.pcm"
+		},
+		"std_impl.memory:pointer_cast" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-pointer_cast.pcm"
+		},
+		"std_impl.memory:shared_ptr" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-shared_ptr.pcm"
+		},
+		"std_impl.memory:shared_ptr.detail.concepts" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-shared_ptr.detail.concepts.pcm"
+		},
+		"std_impl.memory:shared_ptr.detail.control_block" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-shared_ptr.detail.control_block.pcm"
+		},
+		"std_impl.memory:shared_ptr.detail.control_block.impl" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-shared_ptr.detail.control_block.impl.pcm"
+		},
+		"std_impl.memory:shared_ptr.detail.control_block.impl.allocated" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-shared_ptr.detail.control_block.impl.allocated.pcm"
+		},
+		"std_impl.memory:shared_ptr.detail.control_block.impl.base" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-shared_ptr.detail.control_block.impl.base.pcm"
+		},
+		"std_impl.memory:shared_ptr.detail.control_block.impl.deleter" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-shared_ptr.detail.control_block.impl.deleter.pcm"
+		},
+		"std_impl.memory:shared_ptr.detail.control_block.impl.object" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-shared_ptr.detail.control_block.impl.object.pcm"
+		},
+		"std_impl.memory:shared_ptr.detail.control_block.impl.pointer" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-shared_ptr.detail.control_block.impl.pointer.pcm"
+		},
+		"std_impl.memory:shared_ptr.detail.control_block.interface" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-shared_ptr.detail.control_block.interface.pcm"
+		},
+		"std_impl.memory:shared_ptr.impl" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-shared_ptr.impl.pcm"
+		},
+		"std_impl.memory:shared_ptr.impl.array" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-shared_ptr.impl.array.pcm"
+		},
+		"std_impl.memory:shared_ptr.interface" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-shared_ptr.interface.pcm"
+		},
+		"std_impl.memory:unique_ptr" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-unique_ptr.pcm"
+		},
+		"std_impl.memory:unique_ptr.detail.concepts" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-unique_ptr.detail.concepts.pcm"
+		},
+		"std_impl.memory:unique_ptr.detail.pointer" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-unique_ptr.detail.pointer.pcm"
+		},
+		"std_impl.memory:unique_ptr.detail.storage" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-unique_ptr.detail.storage.pcm"
+		},
+		"std_impl.memory:unique_ptr.detail.storage.impl" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-unique_ptr.detail.storage.impl.pcm"
+		},
+		"std_impl.memory:unique_ptr.detail.storage.impl.accessors" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-unique_ptr.detail.storage.impl.accessors.pcm"
+		},
+		"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-unique_ptr.detail.storage.impl.ctor.pointer.pcm"
+		},
+		"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-unique_ptr.detail.storage.impl.ctor.trivial.pcm"
+		},
+		"std_impl.memory:unique_ptr.detail.storage.interface" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-unique_ptr.detail.storage.interface.pcm"
+		},
+		"std_impl.memory:unique_ptr.impl" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-unique_ptr.impl.pcm"
+		},
+		"std_impl.memory:unique_ptr.interface" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-unique_ptr.interface.pcm"
+		},
+		"std_impl.memory:weak_ptr" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-weak_ptr.pcm"
+		},
+		"std_impl.memory:weak_ptr.impl" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-weak_ptr.impl.pcm"
+		},
+		"std_impl.memory:weak_ptr.interface" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.memory-weak_ptr.interface.pcm"
+		},
+		"std_impl.optional" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.optional.pcm"
+		},
+		"std_impl.optional:bad_optional_access" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.optional-bad_optional_access.pcm"
+		},
+		"std_impl.optional:bad_optional_access.impl" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.optional-bad_optional_access.impl.pcm"
+		},
+		"std_impl.optional:bad_optional_access.interface" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.optional-bad_optional_access.interface.pcm"
+		},
+		"std_impl.optional:make_optional" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.optional-make_optional.pcm"
+		},
+		"std_impl.optional:make_optional.impl" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.optional-make_optional.impl.pcm"
+		},
+		"std_impl.optional:make_optional.interface" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.optional-make_optional.interface.pcm"
+		},
+		"std_impl.optional:optional" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.optional-optional.pcm"
+		},
+		"std_impl.optional:optional.impl.ctors" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.optional-optional.impl.ctors.pcm"
+		},
+		"std_impl.optional:optional.impl.modifiers" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.optional-optional.impl.modifiers.pcm"
+		},
+		"std_impl.optional:optional.impl.monadic" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.optional-optional.impl.monadic.pcm"
+		},
+		"std_impl.optional:optional.impl.observers" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.optional-optional.impl.observers.pcm"
+		},
+		"std_impl.optional:optional.impl.ref" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.optional-optional.impl.ref.pcm"
+		},
+		"std_impl.optional:optional.interface" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.optional-optional.interface.pcm"
+		},
+		"std_impl.optional:optional.storage" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.optional-optional.storage.pcm"
+		},
+		"std_impl.optional:optional.storage.impl" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.optional-optional.storage.impl.pcm"
+		},
+		"std_impl.optional:optional.storage.impl.accessors" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.optional-optional.storage.impl.accessors.pcm"
+		},
+		"std_impl.optional:optional.storage.impl.concepts" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.optional-optional.storage.impl.concepts.pcm"
+		},
+		"std_impl.optional:optional.storage.impl.ctors" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.optional-optional.storage.impl.ctors.pcm"
+		},
+		"std_impl.optional:optional.storage.impl.lifetime" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.optional-optional.storage.impl.lifetime.pcm"
+		},
+		"std_impl.optional:optional.storage.interface" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "CMakeFiles/std_impl.dir/std_impl.optional-optional.storage.interface.pcm"
+		}
+	},
+	"usages" : 
+	{
+		"std.compat" : 
+		[
+			"std"
+		],
+		"std_impl" : 
+		[
+			"std",
+			"std_impl.assert",
+			"std_impl.expected",
+			"std_impl.expected:bad_expected_access",
+			"std_impl.expected:bad_expected_access.impl",
+			"std_impl.expected:bad_expected_access.interface",
+			"std_impl.expected:expected",
+			"std_impl.expected:expected.impl",
+			"std_impl.expected:expected.impl.void_spec",
+			"std_impl.expected:expected.interface",
+			"std_impl.expected:expected.storage",
+			"std_impl.expected:expected.storage.impl",
+			"std_impl.expected:expected.storage.impl.accessors",
+			"std_impl.expected:expected.storage.impl.concepts",
+			"std_impl.expected:expected.storage.impl.lifetime",
+			"std_impl.expected:expected.storage.interface",
+			"std_impl.expected:unexpected",
+			"std_impl.expected:unexpected.impl",
+			"std_impl.expected:unexpected.interface",
+			"std_impl.format",
+			"std_impl.format:shared_ptr",
+			"std_impl.format:unique_ptr",
+			"std_impl.format:weak_ptr",
+			"std_impl.memory",
+			"std_impl.memory:allocate_shared",
+			"std_impl.memory:bad_weak_ptr",
+			"std_impl.memory:bad_weak_ptr.impl",
+			"std_impl.memory:bad_weak_ptr.interface",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:enable_shared_from_this",
+			"std_impl.memory:enable_shared_from_this.interface",
+			"std_impl.memory:make_shared",
+			"std_impl.memory:make_unique",
+			"std_impl.memory:pointer_cast",
+			"std_impl.memory:shared_ptr",
+			"std_impl.memory:shared_ptr.detail.concepts",
+			"std_impl.memory:shared_ptr.detail.control_block",
+			"std_impl.memory:shared_ptr.detail.control_block.impl",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.allocated",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.base",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.deleter",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.object",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.pointer",
+			"std_impl.memory:shared_ptr.detail.control_block.interface",
+			"std_impl.memory:shared_ptr.impl",
+			"std_impl.memory:shared_ptr.impl.array",
+			"std_impl.memory:shared_ptr.interface",
+			"std_impl.memory:unique_ptr",
+			"std_impl.memory:unique_ptr.detail.concepts",
+			"std_impl.memory:unique_ptr.detail.pointer",
+			"std_impl.memory:unique_ptr.detail.storage",
+			"std_impl.memory:unique_ptr.detail.storage.impl",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface",
+			"std_impl.memory:unique_ptr.impl",
+			"std_impl.memory:unique_ptr.interface",
+			"std_impl.memory:weak_ptr",
+			"std_impl.memory:weak_ptr.impl",
+			"std_impl.memory:weak_ptr.interface",
+			"std_impl.optional",
+			"std_impl.optional:bad_optional_access",
+			"std_impl.optional:bad_optional_access.impl",
+			"std_impl.optional:bad_optional_access.interface",
+			"std_impl.optional:make_optional",
+			"std_impl.optional:make_optional.impl",
+			"std_impl.optional:make_optional.interface",
+			"std_impl.optional:optional",
+			"std_impl.optional:optional.impl.ctors",
+			"std_impl.optional:optional.impl.modifiers",
+			"std_impl.optional:optional.impl.monadic",
+			"std_impl.optional:optional.impl.observers",
+			"std_impl.optional:optional.impl.ref",
+			"std_impl.optional:optional.interface",
+			"std_impl.optional:optional.storage",
+			"std_impl.optional:optional.storage.impl",
+			"std_impl.optional:optional.storage.impl.accessors",
+			"std_impl.optional:optional.storage.impl.concepts",
+			"std_impl.optional:optional.storage.impl.ctors",
+			"std_impl.optional:optional.storage.impl.lifetime",
+			"std_impl.optional:optional.storage.interface"
+		],
+		"std_impl.assert" : 
+		[
+			"std"
+		],
+		"std_impl.expected" : 
+		[
+			"std",
+			"std_impl.expected:bad_expected_access",
+			"std_impl.expected:bad_expected_access.impl",
+			"std_impl.expected:bad_expected_access.interface",
+			"std_impl.expected:expected",
+			"std_impl.expected:expected.impl",
+			"std_impl.expected:expected.impl.void_spec",
+			"std_impl.expected:expected.interface",
+			"std_impl.expected:expected.storage",
+			"std_impl.expected:expected.storage.impl",
+			"std_impl.expected:expected.storage.impl.accessors",
+			"std_impl.expected:expected.storage.impl.concepts",
+			"std_impl.expected:expected.storage.impl.lifetime",
+			"std_impl.expected:expected.storage.interface",
+			"std_impl.expected:unexpected",
+			"std_impl.expected:unexpected.impl",
+			"std_impl.expected:unexpected.interface"
+		],
+		"std_impl.expected:bad_expected_access" : 
+		[
+			"std",
+			"std_impl.expected:bad_expected_access.impl",
+			"std_impl.expected:bad_expected_access.interface"
+		],
+		"std_impl.expected:bad_expected_access.impl" : 
+		[
+			"std",
+			"std_impl.expected:bad_expected_access.interface"
+		],
+		"std_impl.expected:bad_expected_access.interface" : 
+		[
+			"std"
+		],
+		"std_impl.expected:expected" : 
+		[
+			"std",
+			"std_impl.expected:bad_expected_access",
+			"std_impl.expected:bad_expected_access.impl",
+			"std_impl.expected:bad_expected_access.interface",
+			"std_impl.expected:expected.impl",
+			"std_impl.expected:expected.impl.void_spec",
+			"std_impl.expected:expected.interface",
+			"std_impl.expected:expected.storage",
+			"std_impl.expected:expected.storage.impl",
+			"std_impl.expected:expected.storage.impl.accessors",
+			"std_impl.expected:expected.storage.impl.concepts",
+			"std_impl.expected:expected.storage.impl.lifetime",
+			"std_impl.expected:expected.storage.interface",
+			"std_impl.expected:unexpected",
+			"std_impl.expected:unexpected.impl",
+			"std_impl.expected:unexpected.interface"
+		],
+		"std_impl.expected:expected.impl" : 
+		[
+			"std",
+			"std_impl.expected:bad_expected_access",
+			"std_impl.expected:bad_expected_access.impl",
+			"std_impl.expected:bad_expected_access.interface",
+			"std_impl.expected:expected.interface",
+			"std_impl.expected:expected.storage",
+			"std_impl.expected:expected.storage.impl",
+			"std_impl.expected:expected.storage.impl.accessors",
+			"std_impl.expected:expected.storage.impl.concepts",
+			"std_impl.expected:expected.storage.impl.lifetime",
+			"std_impl.expected:expected.storage.interface",
+			"std_impl.expected:unexpected",
+			"std_impl.expected:unexpected.impl",
+			"std_impl.expected:unexpected.interface"
+		],
+		"std_impl.expected:expected.impl.void_spec" : 
+		[
+			"std",
+			"std_impl.expected:bad_expected_access",
+			"std_impl.expected:bad_expected_access.impl",
+			"std_impl.expected:bad_expected_access.interface",
+			"std_impl.expected:expected.interface",
+			"std_impl.expected:expected.storage",
+			"std_impl.expected:expected.storage.impl",
+			"std_impl.expected:expected.storage.impl.accessors",
+			"std_impl.expected:expected.storage.impl.concepts",
+			"std_impl.expected:expected.storage.impl.lifetime",
+			"std_impl.expected:expected.storage.interface",
+			"std_impl.expected:unexpected",
+			"std_impl.expected:unexpected.impl",
+			"std_impl.expected:unexpected.interface"
+		],
+		"std_impl.expected:expected.interface" : 
+		[
+			"std",
+			"std_impl.expected:bad_expected_access",
+			"std_impl.expected:bad_expected_access.impl",
+			"std_impl.expected:bad_expected_access.interface",
+			"std_impl.expected:expected.storage",
+			"std_impl.expected:expected.storage.impl",
+			"std_impl.expected:expected.storage.impl.accessors",
+			"std_impl.expected:expected.storage.impl.concepts",
+			"std_impl.expected:expected.storage.impl.lifetime",
+			"std_impl.expected:expected.storage.interface",
+			"std_impl.expected:unexpected",
+			"std_impl.expected:unexpected.impl",
+			"std_impl.expected:unexpected.interface"
+		],
+		"std_impl.expected:expected.storage" : 
+		[
+			"std",
+			"std_impl.expected:expected.storage.impl",
+			"std_impl.expected:expected.storage.impl.accessors",
+			"std_impl.expected:expected.storage.impl.concepts",
+			"std_impl.expected:expected.storage.impl.lifetime",
+			"std_impl.expected:expected.storage.interface"
+		],
+		"std_impl.expected:expected.storage.impl" : 
+		[
+			"std",
+			"std_impl.expected:expected.storage.impl.accessors",
+			"std_impl.expected:expected.storage.impl.concepts",
+			"std_impl.expected:expected.storage.impl.lifetime",
+			"std_impl.expected:expected.storage.interface"
+		],
+		"std_impl.expected:expected.storage.impl.accessors" : 
+		[
+			"std",
+			"std_impl.expected:expected.storage.impl.concepts",
+			"std_impl.expected:expected.storage.interface"
+		],
+		"std_impl.expected:expected.storage.impl.concepts" : 
+		[
+			"std"
+		],
+		"std_impl.expected:expected.storage.impl.lifetime" : 
+		[
+			"std",
+			"std_impl.expected:expected.storage.impl.concepts",
+			"std_impl.expected:expected.storage.interface"
+		],
+		"std_impl.expected:expected.storage.interface" : 
+		[
+			"std",
+			"std_impl.expected:expected.storage.impl.concepts"
+		],
+		"std_impl.expected:unexpected" : 
+		[
+			"std",
+			"std_impl.expected:expected.storage.impl.concepts",
+			"std_impl.expected:unexpected.impl",
+			"std_impl.expected:unexpected.interface"
+		],
+		"std_impl.expected:unexpected.impl" : 
+		[
+			"std",
+			"std_impl.expected:expected.storage.impl.concepts",
+			"std_impl.expected:unexpected.interface"
+		],
+		"std_impl.expected:unexpected.interface" : 
+		[
+			"std",
+			"std_impl.expected:expected.storage.impl.concepts"
+		],
+		"std_impl.format" : 
+		[
+			"std",
+			"std_impl.format:shared_ptr",
+			"std_impl.format:unique_ptr",
+			"std_impl.format:weak_ptr",
+			"std_impl.memory",
+			"std_impl.memory:allocate_shared",
+			"std_impl.memory:bad_weak_ptr",
+			"std_impl.memory:bad_weak_ptr.impl",
+			"std_impl.memory:bad_weak_ptr.interface",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:enable_shared_from_this",
+			"std_impl.memory:enable_shared_from_this.interface",
+			"std_impl.memory:make_shared",
+			"std_impl.memory:make_unique",
+			"std_impl.memory:pointer_cast",
+			"std_impl.memory:shared_ptr",
+			"std_impl.memory:shared_ptr.detail.concepts",
+			"std_impl.memory:shared_ptr.detail.control_block",
+			"std_impl.memory:shared_ptr.detail.control_block.impl",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.allocated",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.base",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.deleter",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.object",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.pointer",
+			"std_impl.memory:shared_ptr.detail.control_block.interface",
+			"std_impl.memory:shared_ptr.impl",
+			"std_impl.memory:shared_ptr.impl.array",
+			"std_impl.memory:shared_ptr.interface",
+			"std_impl.memory:unique_ptr",
+			"std_impl.memory:unique_ptr.detail.concepts",
+			"std_impl.memory:unique_ptr.detail.pointer",
+			"std_impl.memory:unique_ptr.detail.storage",
+			"std_impl.memory:unique_ptr.detail.storage.impl",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface",
+			"std_impl.memory:unique_ptr.impl",
+			"std_impl.memory:unique_ptr.interface",
+			"std_impl.memory:weak_ptr",
+			"std_impl.memory:weak_ptr.impl",
+			"std_impl.memory:weak_ptr.interface"
+		],
+		"std_impl.format:shared_ptr" : 
+		[
+			"std",
+			"std_impl.memory",
+			"std_impl.memory:allocate_shared",
+			"std_impl.memory:bad_weak_ptr",
+			"std_impl.memory:bad_weak_ptr.impl",
+			"std_impl.memory:bad_weak_ptr.interface",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:enable_shared_from_this",
+			"std_impl.memory:enable_shared_from_this.interface",
+			"std_impl.memory:make_shared",
+			"std_impl.memory:make_unique",
+			"std_impl.memory:pointer_cast",
+			"std_impl.memory:shared_ptr",
+			"std_impl.memory:shared_ptr.detail.concepts",
+			"std_impl.memory:shared_ptr.detail.control_block",
+			"std_impl.memory:shared_ptr.detail.control_block.impl",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.allocated",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.base",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.deleter",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.object",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.pointer",
+			"std_impl.memory:shared_ptr.detail.control_block.interface",
+			"std_impl.memory:shared_ptr.impl",
+			"std_impl.memory:shared_ptr.impl.array",
+			"std_impl.memory:shared_ptr.interface",
+			"std_impl.memory:unique_ptr",
+			"std_impl.memory:unique_ptr.detail.concepts",
+			"std_impl.memory:unique_ptr.detail.pointer",
+			"std_impl.memory:unique_ptr.detail.storage",
+			"std_impl.memory:unique_ptr.detail.storage.impl",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface",
+			"std_impl.memory:unique_ptr.impl",
+			"std_impl.memory:unique_ptr.interface",
+			"std_impl.memory:weak_ptr",
+			"std_impl.memory:weak_ptr.impl",
+			"std_impl.memory:weak_ptr.interface"
+		],
+		"std_impl.format:unique_ptr" : 
+		[
+			"std",
+			"std_impl.memory",
+			"std_impl.memory:allocate_shared",
+			"std_impl.memory:bad_weak_ptr",
+			"std_impl.memory:bad_weak_ptr.impl",
+			"std_impl.memory:bad_weak_ptr.interface",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:enable_shared_from_this",
+			"std_impl.memory:enable_shared_from_this.interface",
+			"std_impl.memory:make_shared",
+			"std_impl.memory:make_unique",
+			"std_impl.memory:pointer_cast",
+			"std_impl.memory:shared_ptr",
+			"std_impl.memory:shared_ptr.detail.concepts",
+			"std_impl.memory:shared_ptr.detail.control_block",
+			"std_impl.memory:shared_ptr.detail.control_block.impl",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.allocated",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.base",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.deleter",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.object",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.pointer",
+			"std_impl.memory:shared_ptr.detail.control_block.interface",
+			"std_impl.memory:shared_ptr.impl",
+			"std_impl.memory:shared_ptr.impl.array",
+			"std_impl.memory:shared_ptr.interface",
+			"std_impl.memory:unique_ptr",
+			"std_impl.memory:unique_ptr.detail.concepts",
+			"std_impl.memory:unique_ptr.detail.pointer",
+			"std_impl.memory:unique_ptr.detail.storage",
+			"std_impl.memory:unique_ptr.detail.storage.impl",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface",
+			"std_impl.memory:unique_ptr.impl",
+			"std_impl.memory:unique_ptr.interface",
+			"std_impl.memory:weak_ptr",
+			"std_impl.memory:weak_ptr.impl",
+			"std_impl.memory:weak_ptr.interface"
+		],
+		"std_impl.format:weak_ptr" : 
+		[
+			"std",
+			"std_impl.memory",
+			"std_impl.memory:allocate_shared",
+			"std_impl.memory:bad_weak_ptr",
+			"std_impl.memory:bad_weak_ptr.impl",
+			"std_impl.memory:bad_weak_ptr.interface",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:enable_shared_from_this",
+			"std_impl.memory:enable_shared_from_this.interface",
+			"std_impl.memory:make_shared",
+			"std_impl.memory:make_unique",
+			"std_impl.memory:pointer_cast",
+			"std_impl.memory:shared_ptr",
+			"std_impl.memory:shared_ptr.detail.concepts",
+			"std_impl.memory:shared_ptr.detail.control_block",
+			"std_impl.memory:shared_ptr.detail.control_block.impl",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.allocated",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.base",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.deleter",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.object",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.pointer",
+			"std_impl.memory:shared_ptr.detail.control_block.interface",
+			"std_impl.memory:shared_ptr.impl",
+			"std_impl.memory:shared_ptr.impl.array",
+			"std_impl.memory:shared_ptr.interface",
+			"std_impl.memory:unique_ptr",
+			"std_impl.memory:unique_ptr.detail.concepts",
+			"std_impl.memory:unique_ptr.detail.pointer",
+			"std_impl.memory:unique_ptr.detail.storage",
+			"std_impl.memory:unique_ptr.detail.storage.impl",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface",
+			"std_impl.memory:unique_ptr.impl",
+			"std_impl.memory:unique_ptr.interface",
+			"std_impl.memory:weak_ptr",
+			"std_impl.memory:weak_ptr.impl",
+			"std_impl.memory:weak_ptr.interface"
+		],
+		"std_impl.memory" : 
+		[
+			"std",
+			"std_impl.memory:allocate_shared",
+			"std_impl.memory:bad_weak_ptr",
+			"std_impl.memory:bad_weak_ptr.impl",
+			"std_impl.memory:bad_weak_ptr.interface",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:enable_shared_from_this",
+			"std_impl.memory:enable_shared_from_this.interface",
+			"std_impl.memory:make_shared",
+			"std_impl.memory:make_unique",
+			"std_impl.memory:pointer_cast",
+			"std_impl.memory:shared_ptr",
+			"std_impl.memory:shared_ptr.detail.concepts",
+			"std_impl.memory:shared_ptr.detail.control_block",
+			"std_impl.memory:shared_ptr.detail.control_block.impl",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.allocated",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.base",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.deleter",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.object",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.pointer",
+			"std_impl.memory:shared_ptr.detail.control_block.interface",
+			"std_impl.memory:shared_ptr.impl",
+			"std_impl.memory:shared_ptr.impl.array",
+			"std_impl.memory:shared_ptr.interface",
+			"std_impl.memory:unique_ptr",
+			"std_impl.memory:unique_ptr.detail.concepts",
+			"std_impl.memory:unique_ptr.detail.pointer",
+			"std_impl.memory:unique_ptr.detail.storage",
+			"std_impl.memory:unique_ptr.detail.storage.impl",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface",
+			"std_impl.memory:unique_ptr.impl",
+			"std_impl.memory:unique_ptr.interface",
+			"std_impl.memory:weak_ptr",
+			"std_impl.memory:weak_ptr.impl",
+			"std_impl.memory:weak_ptr.interface"
+		],
+		"std_impl.memory:allocate_shared" : 
+		[
+			"std",
+			"std_impl.memory:bad_weak_ptr",
+			"std_impl.memory:bad_weak_ptr.impl",
+			"std_impl.memory:bad_weak_ptr.interface",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:enable_shared_from_this",
+			"std_impl.memory:enable_shared_from_this.interface",
+			"std_impl.memory:shared_ptr",
+			"std_impl.memory:shared_ptr.detail.concepts",
+			"std_impl.memory:shared_ptr.detail.control_block",
+			"std_impl.memory:shared_ptr.detail.control_block.impl",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.allocated",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.base",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.deleter",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.object",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.pointer",
+			"std_impl.memory:shared_ptr.detail.control_block.interface",
+			"std_impl.memory:shared_ptr.impl",
+			"std_impl.memory:shared_ptr.impl.array",
+			"std_impl.memory:shared_ptr.interface",
+			"std_impl.memory:unique_ptr.detail.concepts",
+			"std_impl.memory:unique_ptr.detail.pointer",
+			"std_impl.memory:unique_ptr.detail.storage",
+			"std_impl.memory:unique_ptr.detail.storage.impl",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface",
+			"std_impl.memory:unique_ptr.interface",
+			"std_impl.memory:weak_ptr.interface"
+		],
+		"std_impl.memory:bad_weak_ptr" : 
+		[
+			"std",
+			"std_impl.memory:bad_weak_ptr.impl",
+			"std_impl.memory:bad_weak_ptr.interface"
+		],
+		"std_impl.memory:bad_weak_ptr.impl" : 
+		[
+			"std",
+			"std_impl.memory:bad_weak_ptr.interface"
+		],
+		"std_impl.memory:bad_weak_ptr.interface" : 
+		[
+			"std"
+		],
+		"std_impl.memory:default_delete" : 
+		[
+			"std",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface"
+		],
+		"std_impl.memory:default_delete.detail.concepts" : 
+		[
+			"std"
+		],
+		"std_impl.memory:default_delete.impl" : 
+		[
+			"std",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.interface"
+		],
+		"std_impl.memory:default_delete.interface" : 
+		[
+			"std",
+			"std_impl.memory:default_delete.detail.concepts"
+		],
+		"std_impl.memory:enable_shared_from_this" : 
+		[
+			"std",
+			"std_impl.memory:bad_weak_ptr",
+			"std_impl.memory:bad_weak_ptr.impl",
+			"std_impl.memory:bad_weak_ptr.interface",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:enable_shared_from_this.interface",
+			"std_impl.memory:shared_ptr.detail.concepts",
+			"std_impl.memory:shared_ptr.detail.control_block",
+			"std_impl.memory:shared_ptr.detail.control_block.impl",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.allocated",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.base",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.deleter",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.object",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.pointer",
+			"std_impl.memory:shared_ptr.detail.control_block.interface",
+			"std_impl.memory:shared_ptr.interface",
+			"std_impl.memory:unique_ptr.detail.concepts",
+			"std_impl.memory:unique_ptr.detail.pointer",
+			"std_impl.memory:unique_ptr.detail.storage",
+			"std_impl.memory:unique_ptr.detail.storage.impl",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface",
+			"std_impl.memory:unique_ptr.interface",
+			"std_impl.memory:weak_ptr.interface"
+		],
+		"std_impl.memory:enable_shared_from_this.interface" : 
+		[
+			"std",
+			"std_impl.memory:bad_weak_ptr",
+			"std_impl.memory:bad_weak_ptr.impl",
+			"std_impl.memory:bad_weak_ptr.interface",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:shared_ptr.detail.concepts",
+			"std_impl.memory:shared_ptr.detail.control_block",
+			"std_impl.memory:shared_ptr.detail.control_block.impl",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.allocated",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.base",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.deleter",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.object",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.pointer",
+			"std_impl.memory:shared_ptr.detail.control_block.interface",
+			"std_impl.memory:shared_ptr.interface",
+			"std_impl.memory:unique_ptr.detail.concepts",
+			"std_impl.memory:unique_ptr.detail.pointer",
+			"std_impl.memory:unique_ptr.detail.storage",
+			"std_impl.memory:unique_ptr.detail.storage.impl",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface",
+			"std_impl.memory:unique_ptr.interface",
+			"std_impl.memory:weak_ptr.interface"
+		],
+		"std_impl.memory:make_shared" : 
+		[
+			"std",
+			"std_impl.memory:bad_weak_ptr",
+			"std_impl.memory:bad_weak_ptr.impl",
+			"std_impl.memory:bad_weak_ptr.interface",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:enable_shared_from_this",
+			"std_impl.memory:enable_shared_from_this.interface",
+			"std_impl.memory:shared_ptr",
+			"std_impl.memory:shared_ptr.detail.concepts",
+			"std_impl.memory:shared_ptr.detail.control_block",
+			"std_impl.memory:shared_ptr.detail.control_block.impl",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.allocated",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.base",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.deleter",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.object",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.pointer",
+			"std_impl.memory:shared_ptr.detail.control_block.interface",
+			"std_impl.memory:shared_ptr.impl",
+			"std_impl.memory:shared_ptr.impl.array",
+			"std_impl.memory:shared_ptr.interface",
+			"std_impl.memory:unique_ptr.detail.concepts",
+			"std_impl.memory:unique_ptr.detail.pointer",
+			"std_impl.memory:unique_ptr.detail.storage",
+			"std_impl.memory:unique_ptr.detail.storage.impl",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface",
+			"std_impl.memory:unique_ptr.interface",
+			"std_impl.memory:weak_ptr.interface"
+		],
+		"std_impl.memory:make_unique" : 
+		[
+			"std",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:unique_ptr",
+			"std_impl.memory:unique_ptr.detail.concepts",
+			"std_impl.memory:unique_ptr.detail.pointer",
+			"std_impl.memory:unique_ptr.detail.storage",
+			"std_impl.memory:unique_ptr.detail.storage.impl",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface",
+			"std_impl.memory:unique_ptr.impl",
+			"std_impl.memory:unique_ptr.interface"
+		],
+		"std_impl.memory:pointer_cast" : 
+		[
+			"std",
+			"std_impl.memory:bad_weak_ptr",
+			"std_impl.memory:bad_weak_ptr.impl",
+			"std_impl.memory:bad_weak_ptr.interface",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:enable_shared_from_this.interface",
+			"std_impl.memory:shared_ptr",
+			"std_impl.memory:shared_ptr.detail.concepts",
+			"std_impl.memory:shared_ptr.detail.control_block",
+			"std_impl.memory:shared_ptr.detail.control_block.impl",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.allocated",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.base",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.deleter",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.object",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.pointer",
+			"std_impl.memory:shared_ptr.detail.control_block.interface",
+			"std_impl.memory:shared_ptr.impl",
+			"std_impl.memory:shared_ptr.impl.array",
+			"std_impl.memory:shared_ptr.interface",
+			"std_impl.memory:unique_ptr.detail.concepts",
+			"std_impl.memory:unique_ptr.detail.pointer",
+			"std_impl.memory:unique_ptr.detail.storage",
+			"std_impl.memory:unique_ptr.detail.storage.impl",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface",
+			"std_impl.memory:unique_ptr.interface",
+			"std_impl.memory:weak_ptr.interface"
+		],
+		"std_impl.memory:shared_ptr" : 
+		[
+			"std",
+			"std_impl.memory:bad_weak_ptr",
+			"std_impl.memory:bad_weak_ptr.impl",
+			"std_impl.memory:bad_weak_ptr.interface",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:enable_shared_from_this.interface",
+			"std_impl.memory:shared_ptr.detail.concepts",
+			"std_impl.memory:shared_ptr.detail.control_block",
+			"std_impl.memory:shared_ptr.detail.control_block.impl",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.allocated",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.base",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.deleter",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.object",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.pointer",
+			"std_impl.memory:shared_ptr.detail.control_block.interface",
+			"std_impl.memory:shared_ptr.impl",
+			"std_impl.memory:shared_ptr.impl.array",
+			"std_impl.memory:shared_ptr.interface",
+			"std_impl.memory:unique_ptr.detail.concepts",
+			"std_impl.memory:unique_ptr.detail.pointer",
+			"std_impl.memory:unique_ptr.detail.storage",
+			"std_impl.memory:unique_ptr.detail.storage.impl",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface",
+			"std_impl.memory:unique_ptr.interface",
+			"std_impl.memory:weak_ptr.interface"
+		],
+		"std_impl.memory:shared_ptr.detail.concepts" : 
+		[
+			"std"
+		],
+		"std_impl.memory:shared_ptr.detail.control_block" : 
+		[
+			"std",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:shared_ptr.detail.concepts",
+			"std_impl.memory:shared_ptr.detail.control_block.impl",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.allocated",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.base",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.deleter",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.object",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.pointer",
+			"std_impl.memory:shared_ptr.detail.control_block.interface",
+			"std_impl.memory:unique_ptr.detail.concepts"
+		],
+		"std_impl.memory:shared_ptr.detail.control_block.impl" : 
+		[
+			"std",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:shared_ptr.detail.concepts",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.allocated",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.base",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.deleter",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.object",
+			"std_impl.memory:shared_ptr.detail.control_block.interface",
+			"std_impl.memory:unique_ptr.detail.concepts"
+		],
+		"std_impl.memory:shared_ptr.detail.control_block.impl.allocated" : 
+		[
+			"std",
+			"std_impl.memory:shared_ptr.detail.concepts",
+			"std_impl.memory:shared_ptr.detail.control_block.interface",
+			"std_impl.memory:unique_ptr.detail.concepts"
+		],
+		"std_impl.memory:shared_ptr.detail.control_block.impl.base" : 
+		[
+			"std",
+			"std_impl.memory:shared_ptr.detail.control_block.interface"
+		],
+		"std_impl.memory:shared_ptr.detail.control_block.impl.deleter" : 
+		[
+			"std",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:shared_ptr.detail.control_block.interface",
+			"std_impl.memory:unique_ptr.detail.concepts"
+		],
+		"std_impl.memory:shared_ptr.detail.control_block.impl.object" : 
+		[
+			"std",
+			"std_impl.memory:shared_ptr.detail.control_block.interface"
+		],
+		"std_impl.memory:shared_ptr.detail.control_block.impl.pointer" : 
+		[
+			"std",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.deleter",
+			"std_impl.memory:shared_ptr.detail.control_block.interface",
+			"std_impl.memory:unique_ptr.detail.concepts"
+		],
+		"std_impl.memory:shared_ptr.detail.control_block.interface" : 
+		[
+			"std"
+		],
+		"std_impl.memory:shared_ptr.impl" : 
+		[
+			"std",
+			"std_impl.memory:bad_weak_ptr",
+			"std_impl.memory:bad_weak_ptr.impl",
+			"std_impl.memory:bad_weak_ptr.interface",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:enable_shared_from_this.interface",
+			"std_impl.memory:shared_ptr.detail.concepts",
+			"std_impl.memory:shared_ptr.detail.control_block",
+			"std_impl.memory:shared_ptr.detail.control_block.impl",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.allocated",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.base",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.deleter",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.object",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.pointer",
+			"std_impl.memory:shared_ptr.detail.control_block.interface",
+			"std_impl.memory:shared_ptr.interface",
+			"std_impl.memory:unique_ptr.detail.concepts",
+			"std_impl.memory:unique_ptr.detail.pointer",
+			"std_impl.memory:unique_ptr.detail.storage",
+			"std_impl.memory:unique_ptr.detail.storage.impl",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface",
+			"std_impl.memory:unique_ptr.interface",
+			"std_impl.memory:weak_ptr.interface"
+		],
+		"std_impl.memory:shared_ptr.impl.array" : 
+		[
+			"std",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:shared_ptr.detail.concepts",
+			"std_impl.memory:shared_ptr.detail.control_block",
+			"std_impl.memory:shared_ptr.detail.control_block.impl",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.allocated",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.base",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.deleter",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.object",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.pointer",
+			"std_impl.memory:shared_ptr.detail.control_block.interface",
+			"std_impl.memory:shared_ptr.interface",
+			"std_impl.memory:unique_ptr.detail.concepts",
+			"std_impl.memory:unique_ptr.detail.pointer",
+			"std_impl.memory:unique_ptr.detail.storage",
+			"std_impl.memory:unique_ptr.detail.storage.impl",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface",
+			"std_impl.memory:unique_ptr.interface"
+		],
+		"std_impl.memory:shared_ptr.interface" : 
+		[
+			"std",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:shared_ptr.detail.concepts",
+			"std_impl.memory:shared_ptr.detail.control_block",
+			"std_impl.memory:shared_ptr.detail.control_block.impl",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.allocated",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.base",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.deleter",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.object",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.pointer",
+			"std_impl.memory:shared_ptr.detail.control_block.interface",
+			"std_impl.memory:unique_ptr.detail.concepts",
+			"std_impl.memory:unique_ptr.detail.pointer",
+			"std_impl.memory:unique_ptr.detail.storage",
+			"std_impl.memory:unique_ptr.detail.storage.impl",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface",
+			"std_impl.memory:unique_ptr.interface"
+		],
+		"std_impl.memory:unique_ptr" : 
+		[
+			"std",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:unique_ptr.detail.concepts",
+			"std_impl.memory:unique_ptr.detail.pointer",
+			"std_impl.memory:unique_ptr.detail.storage",
+			"std_impl.memory:unique_ptr.detail.storage.impl",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface",
+			"std_impl.memory:unique_ptr.impl",
+			"std_impl.memory:unique_ptr.interface"
+		],
+		"std_impl.memory:unique_ptr.detail.concepts" : 
+		[
+			"std"
+		],
+		"std_impl.memory:unique_ptr.detail.pointer" : 
+		[
+			"std"
+		],
+		"std_impl.memory:unique_ptr.detail.storage" : 
+		[
+			"std",
+			"std_impl.memory:unique_ptr.detail.storage.impl",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface"
+		],
+		"std_impl.memory:unique_ptr.detail.storage.impl" : 
+		[
+			"std",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface"
+		],
+		"std_impl.memory:unique_ptr.detail.storage.impl.accessors" : 
+		[
+			"std",
+			"std_impl.memory:unique_ptr.detail.storage.interface"
+		],
+		"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer" : 
+		[
+			"std",
+			"std_impl.memory:unique_ptr.detail.storage.interface"
+		],
+		"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial" : 
+		[
+			"std",
+			"std_impl.memory:unique_ptr.detail.storage.interface"
+		],
+		"std_impl.memory:unique_ptr.detail.storage.interface" : 
+		[
+			"std"
+		],
+		"std_impl.memory:unique_ptr.impl" : 
+		[
+			"std",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:unique_ptr.detail.concepts",
+			"std_impl.memory:unique_ptr.detail.pointer",
+			"std_impl.memory:unique_ptr.detail.storage",
+			"std_impl.memory:unique_ptr.detail.storage.impl",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface",
+			"std_impl.memory:unique_ptr.interface"
+		],
+		"std_impl.memory:unique_ptr.interface" : 
+		[
+			"std",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:unique_ptr.detail.concepts",
+			"std_impl.memory:unique_ptr.detail.pointer",
+			"std_impl.memory:unique_ptr.detail.storage",
+			"std_impl.memory:unique_ptr.detail.storage.impl",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface"
+		],
+		"std_impl.memory:weak_ptr" : 
+		[
+			"std",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:shared_ptr.detail.concepts",
+			"std_impl.memory:shared_ptr.detail.control_block",
+			"std_impl.memory:shared_ptr.detail.control_block.impl",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.allocated",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.base",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.deleter",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.object",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.pointer",
+			"std_impl.memory:shared_ptr.detail.control_block.interface",
+			"std_impl.memory:shared_ptr.interface",
+			"std_impl.memory:unique_ptr.detail.concepts",
+			"std_impl.memory:unique_ptr.detail.pointer",
+			"std_impl.memory:unique_ptr.detail.storage",
+			"std_impl.memory:unique_ptr.detail.storage.impl",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface",
+			"std_impl.memory:unique_ptr.interface",
+			"std_impl.memory:weak_ptr.impl",
+			"std_impl.memory:weak_ptr.interface"
+		],
+		"std_impl.memory:weak_ptr.impl" : 
+		[
+			"std",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:shared_ptr.detail.concepts",
+			"std_impl.memory:shared_ptr.detail.control_block",
+			"std_impl.memory:shared_ptr.detail.control_block.impl",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.allocated",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.base",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.deleter",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.object",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.pointer",
+			"std_impl.memory:shared_ptr.detail.control_block.interface",
+			"std_impl.memory:shared_ptr.interface",
+			"std_impl.memory:unique_ptr.detail.concepts",
+			"std_impl.memory:unique_ptr.detail.pointer",
+			"std_impl.memory:unique_ptr.detail.storage",
+			"std_impl.memory:unique_ptr.detail.storage.impl",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface",
+			"std_impl.memory:unique_ptr.interface",
+			"std_impl.memory:weak_ptr.interface"
+		],
+		"std_impl.memory:weak_ptr.interface" : 
+		[
+			"std",
+			"std_impl.memory:default_delete",
+			"std_impl.memory:default_delete.detail.concepts",
+			"std_impl.memory:default_delete.impl",
+			"std_impl.memory:default_delete.interface",
+			"std_impl.memory:shared_ptr.detail.concepts",
+			"std_impl.memory:shared_ptr.detail.control_block",
+			"std_impl.memory:shared_ptr.detail.control_block.impl",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.allocated",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.base",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.deleter",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.object",
+			"std_impl.memory:shared_ptr.detail.control_block.impl.pointer",
+			"std_impl.memory:shared_ptr.detail.control_block.interface",
+			"std_impl.memory:shared_ptr.interface",
+			"std_impl.memory:unique_ptr.detail.concepts",
+			"std_impl.memory:unique_ptr.detail.pointer",
+			"std_impl.memory:unique_ptr.detail.storage",
+			"std_impl.memory:unique_ptr.detail.storage.impl",
+			"std_impl.memory:unique_ptr.detail.storage.impl.accessors",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.pointer",
+			"std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+			"std_impl.memory:unique_ptr.detail.storage.interface",
+			"std_impl.memory:unique_ptr.interface"
+		],
+		"std_impl.optional" : 
+		[
+			"std",
+			"std_impl.optional:bad_optional_access",
+			"std_impl.optional:bad_optional_access.impl",
+			"std_impl.optional:bad_optional_access.interface",
+			"std_impl.optional:make_optional",
+			"std_impl.optional:make_optional.impl",
+			"std_impl.optional:make_optional.interface",
+			"std_impl.optional:optional",
+			"std_impl.optional:optional.impl.ctors",
+			"std_impl.optional:optional.impl.modifiers",
+			"std_impl.optional:optional.impl.monadic",
+			"std_impl.optional:optional.impl.observers",
+			"std_impl.optional:optional.impl.ref",
+			"std_impl.optional:optional.interface",
+			"std_impl.optional:optional.storage",
+			"std_impl.optional:optional.storage.impl",
+			"std_impl.optional:optional.storage.impl.accessors",
+			"std_impl.optional:optional.storage.impl.concepts",
+			"std_impl.optional:optional.storage.impl.ctors",
+			"std_impl.optional:optional.storage.impl.lifetime",
+			"std_impl.optional:optional.storage.interface"
+		],
+		"std_impl.optional:bad_optional_access" : 
+		[
+			"std",
+			"std_impl.optional:bad_optional_access.impl",
+			"std_impl.optional:bad_optional_access.interface"
+		],
+		"std_impl.optional:bad_optional_access.impl" : 
+		[
+			"std",
+			"std_impl.optional:bad_optional_access.interface"
+		],
+		"std_impl.optional:bad_optional_access.interface" : 
+		[
+			"std"
+		],
+		"std_impl.optional:make_optional" : 
+		[
+			"std",
+			"std_impl.optional:bad_optional_access",
+			"std_impl.optional:bad_optional_access.impl",
+			"std_impl.optional:bad_optional_access.interface",
+			"std_impl.optional:make_optional.impl",
+			"std_impl.optional:make_optional.interface",
+			"std_impl.optional:optional",
+			"std_impl.optional:optional.impl.ctors",
+			"std_impl.optional:optional.impl.modifiers",
+			"std_impl.optional:optional.impl.monadic",
+			"std_impl.optional:optional.impl.observers",
+			"std_impl.optional:optional.impl.ref",
+			"std_impl.optional:optional.interface",
+			"std_impl.optional:optional.storage",
+			"std_impl.optional:optional.storage.impl",
+			"std_impl.optional:optional.storage.impl.accessors",
+			"std_impl.optional:optional.storage.impl.concepts",
+			"std_impl.optional:optional.storage.impl.ctors",
+			"std_impl.optional:optional.storage.impl.lifetime",
+			"std_impl.optional:optional.storage.interface"
+		],
+		"std_impl.optional:make_optional.impl" : 
+		[
+			"std",
+			"std_impl.optional:bad_optional_access",
+			"std_impl.optional:bad_optional_access.impl",
+			"std_impl.optional:bad_optional_access.interface",
+			"std_impl.optional:make_optional.interface",
+			"std_impl.optional:optional",
+			"std_impl.optional:optional.impl.ctors",
+			"std_impl.optional:optional.impl.modifiers",
+			"std_impl.optional:optional.impl.monadic",
+			"std_impl.optional:optional.impl.observers",
+			"std_impl.optional:optional.impl.ref",
+			"std_impl.optional:optional.interface",
+			"std_impl.optional:optional.storage",
+			"std_impl.optional:optional.storage.impl",
+			"std_impl.optional:optional.storage.impl.accessors",
+			"std_impl.optional:optional.storage.impl.concepts",
+			"std_impl.optional:optional.storage.impl.ctors",
+			"std_impl.optional:optional.storage.impl.lifetime",
+			"std_impl.optional:optional.storage.interface"
+		],
+		"std_impl.optional:make_optional.interface" : 
+		[
+			"std",
+			"std_impl.optional:optional.interface",
+			"std_impl.optional:optional.storage",
+			"std_impl.optional:optional.storage.impl",
+			"std_impl.optional:optional.storage.impl.accessors",
+			"std_impl.optional:optional.storage.impl.concepts",
+			"std_impl.optional:optional.storage.impl.ctors",
+			"std_impl.optional:optional.storage.impl.lifetime",
+			"std_impl.optional:optional.storage.interface"
+		],
+		"std_impl.optional:optional" : 
+		[
+			"std",
+			"std_impl.optional:bad_optional_access",
+			"std_impl.optional:bad_optional_access.impl",
+			"std_impl.optional:bad_optional_access.interface",
+			"std_impl.optional:optional.impl.ctors",
+			"std_impl.optional:optional.impl.modifiers",
+			"std_impl.optional:optional.impl.monadic",
+			"std_impl.optional:optional.impl.observers",
+			"std_impl.optional:optional.impl.ref",
+			"std_impl.optional:optional.interface",
+			"std_impl.optional:optional.storage",
+			"std_impl.optional:optional.storage.impl",
+			"std_impl.optional:optional.storage.impl.accessors",
+			"std_impl.optional:optional.storage.impl.concepts",
+			"std_impl.optional:optional.storage.impl.ctors",
+			"std_impl.optional:optional.storage.impl.lifetime",
+			"std_impl.optional:optional.storage.interface"
+		],
+		"std_impl.optional:optional.impl.ctors" : 
+		[
+			"std",
+			"std_impl.optional:optional.interface",
+			"std_impl.optional:optional.storage",
+			"std_impl.optional:optional.storage.impl",
+			"std_impl.optional:optional.storage.impl.accessors",
+			"std_impl.optional:optional.storage.impl.concepts",
+			"std_impl.optional:optional.storage.impl.ctors",
+			"std_impl.optional:optional.storage.impl.lifetime",
+			"std_impl.optional:optional.storage.interface"
+		],
+		"std_impl.optional:optional.impl.modifiers" : 
+		[
+			"std",
+			"std_impl.optional:optional.interface",
+			"std_impl.optional:optional.storage",
+			"std_impl.optional:optional.storage.impl",
+			"std_impl.optional:optional.storage.impl.accessors",
+			"std_impl.optional:optional.storage.impl.concepts",
+			"std_impl.optional:optional.storage.impl.ctors",
+			"std_impl.optional:optional.storage.impl.lifetime",
+			"std_impl.optional:optional.storage.interface"
+		],
+		"std_impl.optional:optional.impl.monadic" : 
+		[
+			"std",
+			"std_impl.optional:optional.interface",
+			"std_impl.optional:optional.storage",
+			"std_impl.optional:optional.storage.impl",
+			"std_impl.optional:optional.storage.impl.accessors",
+			"std_impl.optional:optional.storage.impl.concepts",
+			"std_impl.optional:optional.storage.impl.ctors",
+			"std_impl.optional:optional.storage.impl.lifetime",
+			"std_impl.optional:optional.storage.interface"
+		],
+		"std_impl.optional:optional.impl.observers" : 
+		[
+			"std",
+			"std_impl.optional:bad_optional_access",
+			"std_impl.optional:bad_optional_access.impl",
+			"std_impl.optional:bad_optional_access.interface",
+			"std_impl.optional:optional.interface",
+			"std_impl.optional:optional.storage",
+			"std_impl.optional:optional.storage.impl",
+			"std_impl.optional:optional.storage.impl.accessors",
+			"std_impl.optional:optional.storage.impl.concepts",
+			"std_impl.optional:optional.storage.impl.ctors",
+			"std_impl.optional:optional.storage.impl.lifetime",
+			"std_impl.optional:optional.storage.interface"
+		],
+		"std_impl.optional:optional.impl.ref" : 
+		[
+			"std",
+			"std_impl.optional:bad_optional_access",
+			"std_impl.optional:bad_optional_access.impl",
+			"std_impl.optional:bad_optional_access.interface",
+			"std_impl.optional:optional.interface",
+			"std_impl.optional:optional.storage",
+			"std_impl.optional:optional.storage.impl",
+			"std_impl.optional:optional.storage.impl.accessors",
+			"std_impl.optional:optional.storage.impl.concepts",
+			"std_impl.optional:optional.storage.impl.ctors",
+			"std_impl.optional:optional.storage.impl.lifetime",
+			"std_impl.optional:optional.storage.interface"
+		],
+		"std_impl.optional:optional.interface" : 
+		[
+			"std",
+			"std_impl.optional:optional.storage",
+			"std_impl.optional:optional.storage.impl",
+			"std_impl.optional:optional.storage.impl.accessors",
+			"std_impl.optional:optional.storage.impl.concepts",
+			"std_impl.optional:optional.storage.impl.ctors",
+			"std_impl.optional:optional.storage.impl.lifetime",
+			"std_impl.optional:optional.storage.interface"
+		],
+		"std_impl.optional:optional.storage" : 
+		[
+			"std",
+			"std_impl.optional:optional.storage.impl",
+			"std_impl.optional:optional.storage.impl.accessors",
+			"std_impl.optional:optional.storage.impl.concepts",
+			"std_impl.optional:optional.storage.impl.ctors",
+			"std_impl.optional:optional.storage.impl.lifetime",
+			"std_impl.optional:optional.storage.interface"
+		],
+		"std_impl.optional:optional.storage.impl" : 
+		[
+			"std",
+			"std_impl.optional:optional.storage.impl.accessors",
+			"std_impl.optional:optional.storage.impl.concepts",
+			"std_impl.optional:optional.storage.impl.ctors",
+			"std_impl.optional:optional.storage.impl.lifetime",
+			"std_impl.optional:optional.storage.interface"
+		],
+		"std_impl.optional:optional.storage.impl.accessors" : 
+		[
+			"std",
+			"std_impl.optional:optional.storage.impl.concepts",
+			"std_impl.optional:optional.storage.interface"
+		],
+		"std_impl.optional:optional.storage.impl.concepts" : 
+		[
+			"std"
+		],
+		"std_impl.optional:optional.storage.impl.ctors" : 
+		[
+			"std",
+			"std_impl.optional:optional.storage.impl.concepts",
+			"std_impl.optional:optional.storage.interface"
+		],
+		"std_impl.optional:optional.storage.impl.lifetime" : 
+		[
+			"std",
+			"std_impl.optional:optional.storage.impl.concepts",
+			"std_impl.optional:optional.storage.interface"
+		],
+		"std_impl.optional:optional.storage.interface" : 
+		[
+			"std",
+			"std_impl.optional:optional.storage.impl.concepts"
+		]
+	}
+}

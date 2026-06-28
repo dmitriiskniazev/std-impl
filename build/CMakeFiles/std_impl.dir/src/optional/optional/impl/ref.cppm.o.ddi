@@ -1,0 +1,27 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles/std_impl.dir/src/optional/optional/impl/ref.cppm.o",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "std_impl.optional:optional.impl.ref",
+          "source-path": "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/optional/impl/ref.cppm"
+        }
+      ],
+      "requires": [
+        {
+          "logical-name": "std"
+        },
+        {
+          "logical-name": "std_impl.optional:bad_optional_access"
+        },
+        {
+          "logical-name": "std_impl.optional:optional.interface"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

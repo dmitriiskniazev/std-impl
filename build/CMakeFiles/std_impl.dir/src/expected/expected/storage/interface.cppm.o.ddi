@@ -1,0 +1,24 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles/std_impl.dir/src/expected/expected/storage/interface.cppm.o",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "std_impl.expected:expected.storage.interface",
+          "source-path": "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/expected/expected/storage/interface.cppm"
+        }
+      ],
+      "requires": [
+        {
+          "logical-name": "std"
+        },
+        {
+          "logical-name": "std_impl.expected:expected.storage.impl.concepts"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

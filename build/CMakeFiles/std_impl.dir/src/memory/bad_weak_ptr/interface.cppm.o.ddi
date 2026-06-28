@@ -1,0 +1,21 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles/std_impl.dir/src/memory/bad_weak_ptr/interface.cppm.o",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "std_impl.memory:bad_weak_ptr.interface",
+          "source-path": "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/bad_weak_ptr/interface.cppm"
+        }
+      ],
+      "requires": [
+        {
+          "logical-name": "std"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

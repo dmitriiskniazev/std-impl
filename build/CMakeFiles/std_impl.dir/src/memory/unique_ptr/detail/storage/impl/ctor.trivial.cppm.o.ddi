@@ -1,0 +1,21 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles/std_impl.dir/src/memory/unique_ptr/detail/storage/impl/ctor.trivial.cppm.o",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "std_impl.memory:unique_ptr.detail.storage.impl.ctor.trivial",
+          "source-path": "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/unique_ptr/detail/storage/impl/ctor.trivial.cppm"
+        }
+      ],
+      "requires": [
+        {
+          "logical-name": "std_impl.memory:unique_ptr.detail.storage.interface"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

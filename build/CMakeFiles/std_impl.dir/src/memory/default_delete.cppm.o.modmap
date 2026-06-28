@@ -1,0 +1,6 @@
+-x c++-module
+-fmodule-output="CMakeFiles/std_impl.dir/std_impl.memory-default_delete.pcm"
+-fmodule-file="std_impl.memory:default_delete.interface=CMakeFiles/std_impl.dir/std_impl.memory-default_delete.interface.pcm"
+-fmodule-file="std_impl.memory:default_delete.impl=CMakeFiles/std_impl.dir/std_impl.memory-default_delete.impl.pcm"
+-fmodule-file="std=CMakeFiles/__cmake_cxx_std_23.dir/std.pcm"
+-fmodule-file="std_impl.memory:default_delete.detail.concepts=CMakeFiles/std_impl.dir/std_impl.memory-default_delete.detail.concepts.pcm"

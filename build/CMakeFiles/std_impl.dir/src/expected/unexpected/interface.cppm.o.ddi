@@ -1,0 +1,24 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles/std_impl.dir/src/expected/unexpected/interface.cppm.o",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "std_impl.expected:unexpected.interface",
+          "source-path": "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/expected/unexpected/interface.cppm"
+        }
+      ],
+      "requires": [
+        {
+          "logical-name": "std"
+        },
+        {
+          "logical-name": "std_impl.expected:expected.storage.impl.concepts"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

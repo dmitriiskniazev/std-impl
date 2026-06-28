@@ -1,0 +1,17 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles/std_impl_memory_smoke_test.dir/tests/memory/smoke_test.cpp.o",
+      "requires": [
+        {
+          "logical-name": "std"
+        },
+        {
+          "logical-name": "std_impl"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

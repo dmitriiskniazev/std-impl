@@ -1,0 +1,30 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles/std_impl.dir/src/optional/optional/impl/observers.cppm.o",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "std_impl.optional:optional.impl.observers",
+          "source-path": "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/optional/impl/observers.cppm"
+        }
+      ],
+      "requires": [
+        {
+          "logical-name": "std"
+        },
+        {
+          "logical-name": "std_impl.optional:optional.interface"
+        },
+        {
+          "logical-name": "std_impl.optional:bad_optional_access"
+        },
+        {
+          "logical-name": "std_impl.optional:optional.storage"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

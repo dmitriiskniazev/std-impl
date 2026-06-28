@@ -1,0 +1,64 @@
+---
+Language: Cpp
+BasedOnStyle: LLVM
+
+# Canonical style for cpp meta-repo, stdx/, type_list/ — no per-directory overrides.
+IndentWidth: 4
+ContinuationIndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ColumnLimit: 99
+
+MaxEmptyLinesToKeep: 1
+SeparateDefinitionBlocks: Always
+KeepEmptyLinesAtTheStartOfBlocks: false
+
+# Blank lines around ``namespace`` are finalized by scripts/normalize-cpp-blank-lines.py
+# (runs before clang-format in format.sh).
+
+# Python-like blocks: `) {` reads as `):` after a dedented `)`; body is indentation-only.
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterClass: false
+  AfterFunction: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: true
+AllowShortBlocksOnASingleLine: false
+AllowShortLambdasOnASingleLine: None
+AllowShortCaseLabelsOnASingleLine: false
+
+BinPackArguments: false
+BinPackParameters: false
+BreakBeforeTemplateCloser: true
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+
+BreakBeforeBinaryOperators: NonAssignment
+BreakBeforeTernaryOperators: true
+
+AlignAfterOpenBracket: DontAlign
+AlignOperands: false
+
+FixNamespaceComments: false
+NamespaceIndentation: All
+ReflowComments: true
+SpacesBeforeTrailingComments: 2
+
+SpaceBeforeParens: ControlStatements
+SpaceAfterTemplateKeyword: true
+SpacesInAngles: Never
+PointerAlignment: Left
+
+SortIncludes: Never
+IncludeBlocks: Preserve
+
+IndentRequiresClause: true
+AlwaysBreakTemplateDeclarations: Yes
+BreakTemplateDeclarations: Yes
+BreakInheritanceList: AfterColon
+BreakConstructorInitializers: AfterColon
+PackConstructorInitializers: Never
+
+IndentAccessModifiers: false
+AccessModifierOffset: -4

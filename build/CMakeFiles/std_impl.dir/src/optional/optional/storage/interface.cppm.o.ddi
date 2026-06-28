@@ -1,0 +1,24 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles/std_impl.dir/src/optional/optional/storage/interface.cppm.o",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "std_impl.optional:optional.storage.interface",
+          "source-path": "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/optional/optional/storage/interface.cppm"
+        }
+      ],
+      "requires": [
+        {
+          "logical-name": "std"
+        },
+        {
+          "logical-name": "std_impl.optional:optional.storage.impl.concepts"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

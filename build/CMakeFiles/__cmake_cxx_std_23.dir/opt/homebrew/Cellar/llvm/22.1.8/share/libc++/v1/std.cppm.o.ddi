@@ -1,0 +1,16 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles/__cmake_cxx_std_23.dir/opt/homebrew/Cellar/llvm/22.1.8/share/libc++/v1/std.cppm.o",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "std",
+          "source-path": "/opt/homebrew/Cellar/llvm/22.1.8/share/libc++/v1/std.cppm"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

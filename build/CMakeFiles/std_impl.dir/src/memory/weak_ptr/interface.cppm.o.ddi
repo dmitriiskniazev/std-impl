@@ -1,0 +1,24 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles/std_impl.dir/src/memory/weak_ptr/interface.cppm.o",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "std_impl.memory:weak_ptr.interface",
+          "source-path": "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/weak_ptr/interface.cppm"
+        }
+      ],
+      "requires": [
+        {
+          "logical-name": "std"
+        },
+        {
+          "logical-name": "std_impl.memory:shared_ptr.interface"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}

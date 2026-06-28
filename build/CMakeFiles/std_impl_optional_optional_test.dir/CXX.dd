@@ -1,0 +1,3 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles/std_impl_optional_optional_test.dir/tests/optional/optional_test.cpp.o: dyndep | CMakeFiles/__cmake_cxx_std_23.dir/std.pcm CMakeFiles/std_impl.dir/std_impl.pcm CMakeFiles/std_impl.dir/std_impl.assert.pcm
+

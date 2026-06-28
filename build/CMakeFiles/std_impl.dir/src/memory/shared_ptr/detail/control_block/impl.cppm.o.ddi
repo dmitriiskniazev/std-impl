@@ -1,0 +1,30 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles/std_impl.dir/src/memory/shared_ptr/detail/control_block/impl.cppm.o",
+      "provides": [
+        {
+          "is-interface": true,
+          "logical-name": "std_impl.memory:shared_ptr.detail.control_block.impl",
+          "source-path": "/Users/dskniazev/projects/github/dmitriiskniazev/std-impl/src/memory/shared_ptr/detail/control_block/impl.cppm"
+        }
+      ],
+      "requires": [
+        {
+          "logical-name": "std_impl.memory:shared_ptr.detail.control_block.impl.base"
+        },
+        {
+          "logical-name": "std_impl.memory:shared_ptr.detail.control_block.impl.deleter"
+        },
+        {
+          "logical-name": "std_impl.memory:shared_ptr.detail.control_block.impl.allocated"
+        },
+        {
+          "logical-name": "std_impl.memory:shared_ptr.detail.control_block.impl.object"
+        }
+      ]
+    }
+  ],
+  "version": 1
+}
