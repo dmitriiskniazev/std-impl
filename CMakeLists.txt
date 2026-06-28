@@ -60,6 +60,27 @@ target_sources(std_impl PUBLIC FILE_SET CXX_MODULES FILES
             src/format/format.cppm
             src/format/unique_ptr.cppm
             src/format/shared_ptr.cppm
+            src/format/weak_ptr.cppm
+            src/optional/optional/storage/storage.cppm
+            src/optional/optional/storage/interface.cppm
+            src/optional/optional/storage/impl.cppm
+            src/optional/optional/storage/impl/concepts.cppm
+            src/optional/optional/storage/impl/ctors.cppm
+            src/optional/optional/storage/impl/accessors.cppm
+            src/optional/optional/storage/impl/lifetime.cppm
+            src/optional/optional/interface.cppm
+            src/optional/optional/optional.cppm
+            src/optional/optional/impl/ctors.cppm
+            src/optional/optional/impl/observers.cppm
+            src/optional/optional/impl/modifiers.cppm
+            src/optional/optional/impl/monadic.cppm
+            src/optional/optional/impl/ref.cppm
+            src/optional/bad_optional_access/bad_optional_access.cppm
+            src/optional/bad_optional_access/interface.cppm
+            src/optional/bad_optional_access/impl.cppm
+            src/optional/make_optional/make_optional.cppm
+            src/optional/make_optional/interface.cppm
+            src/optional/make_optional/impl.cppm
     src/std_impl.cppm
 )
 target_include_directories(std_impl PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
@@ -93,7 +114,27 @@ add_test(NAME std_impl_memory_shared_ptr_cpp26_test COMMAND std_impl_memory_shar
 add_executable(std_impl_memory_enable_shared_from_this_test "tests/memory/enable_shared_from_this_test.cpp")
 target_link_libraries(std_impl_memory_enable_shared_from_this_test PRIVATE std_impl)
 add_test(NAME std_impl_memory_enable_shared_from_this_test COMMAND std_impl_memory_enable_shared_from_this_test)
+add_executable(std_impl_optional_smoke_test "tests/optional/smoke_test.cpp")
+target_link_libraries(std_impl_optional_smoke_test PRIVATE std_impl)
+add_test(NAME std_impl_optional_smoke_test COMMAND std_impl_optional_smoke_test)
+add_executable(std_impl_optional_nullopt_test "tests/optional/nullopt_test.cpp")
+target_link_libraries(std_impl_optional_nullopt_test PRIVATE std_impl)
+add_test(NAME std_impl_optional_nullopt_test COMMAND std_impl_optional_nullopt_test)
+add_executable(std_impl_optional_bad_optional_access_test "tests/optional/bad_optional_access_test.cpp")
+target_link_libraries(std_impl_optional_bad_optional_access_test PRIVATE std_impl)
+add_test(NAME std_impl_optional_bad_optional_access_test COMMAND std_impl_optional_bad_optional_access_test)
+add_executable(std_impl_optional_optional_test "tests/optional/optional_test.cpp")
+target_link_libraries(std_impl_optional_optional_test PRIVATE std_impl)
+add_test(NAME std_impl_optional_optional_test COMMAND std_impl_optional_optional_test)
+add_executable(std_impl_optional_make_optional_test "tests/optional/make_optional_test.cpp")
+target_link_libraries(std_impl_optional_make_optional_test PRIVATE std_impl)
+add_test(NAME std_impl_optional_make_optional_test COMMAND std_impl_optional_make_optional_test)
+add_executable(std_impl_optional_optional_ref_test "tests/optional/optional_ref_test.cpp")
+target_link_libraries(std_impl_optional_optional_ref_test PRIVATE std_impl)
+add_test(NAME std_impl_optional_optional_ref_test COMMAND std_impl_optional_optional_ref_test)
 add_executable(std_impl_memory_unique_ptr "examples/memory/unique_ptr.cpp")
 target_link_libraries(std_impl_memory_unique_ptr PRIVATE std_impl)
 add_executable(std_impl_memory_shared_ptr "examples/memory/shared_ptr.cpp")
 target_link_libraries(std_impl_memory_shared_ptr PRIVATE std_impl)
+add_executable(std_impl_optional_optional "examples/optional/optional.cpp")
+target_link_libraries(std_impl_optional_optional PRIVATE std_impl)
