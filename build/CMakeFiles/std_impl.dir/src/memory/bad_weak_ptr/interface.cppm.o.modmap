@@ -1,3 +1,0 @@
--x c++-module
--fmodule-output="CMakeFiles/std_impl.dir/std_impl.memory-bad_weak_ptr.interface.pcm"
--fmodule-file="std=CMakeFiles/__cmake_cxx_std_23.dir/std.pcm"

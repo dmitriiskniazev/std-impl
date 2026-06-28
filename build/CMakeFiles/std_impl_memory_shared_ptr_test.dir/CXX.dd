@@ -1,3 +1,0 @@
-ninja_dyndep_version = 1.0
-build CMakeFiles/std_impl_memory_shared_ptr_test.dir/tests/memory/shared_ptr_test.cpp.o: dyndep | CMakeFiles/__cmake_cxx_std_23.dir/std.pcm CMakeFiles/std_impl.dir/std_impl.pcm CMakeFiles/std_impl.dir/std_impl.assert.pcm CMakeFiles/std_impl.dir/std_impl.format.pcm
-

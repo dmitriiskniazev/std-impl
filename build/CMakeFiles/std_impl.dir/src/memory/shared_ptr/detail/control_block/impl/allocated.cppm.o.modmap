@@ -1,6 +1,0 @@
--x c++-module
--fmodule-output="CMakeFiles/std_impl.dir/std_impl.memory-shared_ptr.detail.control_block.impl.allocated.pcm"
--fmodule-file="std=CMakeFiles/__cmake_cxx_std_23.dir/std.pcm"
--fmodule-file="std_impl.memory:shared_ptr.detail.concepts=CMakeFiles/std_impl.dir/std_impl.memory-shared_ptr.detail.concepts.pcm"
--fmodule-file="std_impl.memory:shared_ptr.detail.control_block.interface=CMakeFiles/std_impl.dir/std_impl.memory-shared_ptr.detail.control_block.interface.pcm"
--fmodule-file="std_impl.memory:unique_ptr.detail.concepts=CMakeFiles/std_impl.dir/std_impl.memory-unique_ptr.detail.concepts.pcm"
