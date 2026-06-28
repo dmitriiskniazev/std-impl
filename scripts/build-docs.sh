@@ -20,5 +20,6 @@ python3 -m pip install -q -U pip
 python3 -m pip install -q -r requirements.txt
 
 sphinx-build -b html -W --keep-going . _build/html
+touch _build/html/.nojekyll
 
 echo "docs: $root/docs/_build/html/index.html"

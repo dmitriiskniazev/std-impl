@@ -31,6 +31,7 @@ myst_url_schemes = ("http", "https", "mailto")
 html_theme = "furo"
 html_title = "std-impl"
 html_static_path = []
+html_baseurl = "https://dmitriiskniazev.github.io/std-impl/"
 
 html_theme_options = {
     "navigation_with_keys": True,
