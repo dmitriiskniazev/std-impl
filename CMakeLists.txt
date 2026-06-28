@@ -56,7 +56,10 @@ target_sources(std_impl PUBLIC FILE_SET CXX_MODULES FILES
             src/memory/bad_weak_ptr/impl.cppm
             src/memory/bad_weak_ptr.cppm
             src/memory/pointer_cast.cppm
-    src/memory/memory.cppm
+            src/memory/memory.cppm
+            src/format/format.cppm
+            src/format/unique_ptr.cppm
+            src/format/shared_ptr.cppm
     src/std_impl.cppm
 )
 target_include_directories(std_impl PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
