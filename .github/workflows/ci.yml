@@ -1,0 +1,74 @@
+name: CI
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  LLVM_VERSION: 22.1.7
+  LLVM_INSTALL_DIR: /opt/llvm
+
+jobs:
+  format:
+    name: Format
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Install LLVM
+        run: ./scripts/install-llvm-linux-ci.sh
+
+      - name: Check formatting
+        run: ./scripts/format-check.sh
+
+      - name: Check for disallowed #include
+        run: ./scripts/check-no-includes.sh
+
+  build:
+    name: Build (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: macos-latest
+            compiler: /opt/homebrew/opt/llvm/bin/clang++
+          - os: ubuntu-latest
+            compiler: /opt/llvm/bin/clang++
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Install dependencies (macOS)
+        if: runner.os == 'macOS'
+        run: brew install llvm ninja cmake
+
+      - name: Install LLVM (Ubuntu)
+        if: runner.os == 'Linux'
+        run: ./scripts/install-llvm-linux-ci.sh
+
+      - name: Install CMake (Ubuntu)
+        if: runner.os == 'Linux'
+        uses: lukka/get-cmake@latest
+        with:
+          cmakeVersion: 4.3.2
+
+      - name: Configure
+        run: cmake -B build -G Ninja -DCMAKE_CXX_COMPILER="${{ matrix.compiler }}"
+
+      - name: Build
+        run: cmake --build build -j
+
+      - name: Test
+        env:
+          LD_LIBRARY_PATH: ${{ env.LLVM_LIB_DIR }}
+        if: runner.os == 'Linux'
+        run: ctest --test-dir build --output-on-failure
+
+      - name: Test
+        if: runner.os == 'macOS'
+        run: ctest --test-dir build --output-on-failure
