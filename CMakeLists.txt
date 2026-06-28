@@ -16,5 +16,7 @@ endif()
 
 add_library(std_impl)
 target_sources(std_impl PUBLIC FILE_SET CXX_MODULES FILES
+    src/assert/assert.cppm
+    src/std_impl.cppm
 )
 target_include_directories(std_impl PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
