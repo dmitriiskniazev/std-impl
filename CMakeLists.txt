@@ -137,6 +137,7 @@ set(STD_IMPL_OPTIONAL_TESTS
     optional/optional_test
     optional/optional_in_place_test
     optional/optional_convert_test
+    optional/optional_convert_from_optional_test
     optional/make_optional_test
     optional/optional_ref_test
 )
