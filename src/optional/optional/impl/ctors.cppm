@@ -2,6 +2,7 @@ export module std_impl.optional:optional.impl.ctors;
 import std;
 
 import :optional.interface;
+import :optional.detail.concepts;
 import :optional.storage;
 
 namespace std_impl::optional {
@@ -43,6 +44,20 @@ namespace std_impl::optional {
     constexpr optional<T>::optional(
         std::in_place_t, std::initializer_list<U> list, Args&&... args) {
         storage_.emplace(list, std::forward<Args>(args)...);
+    }
+
+    template <typename T>
+    template <typename U>
+        requires(
+            std::constructible_from<typename optional<T>::value_type, U>
+            and not std::is_same_v<std::remove_cvref_t<U>, std::in_place_t>
+            and not std::is_same_v<std::remove_cvref_t<U>, optional<T>>
+            and not std::is_same_v<std::remove_cvref_t<U>, nullopt_t>
+            and (not std::is_same_v<typename optional<T>::value_type, bool>
+                or not is_optional<std::remove_cvref_t<U>>))
+    constexpr optional<T>::optional(U&& value) noexcept(
+        std::is_nothrow_constructible_v<typename optional<T>::value_type, U>) {
+        storage_.emplace(std::forward<U>(value));
     }
 
     template <typename T>
