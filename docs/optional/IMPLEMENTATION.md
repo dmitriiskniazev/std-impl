@@ -116,6 +116,7 @@ std_impl.optional
 │   ├── :optional.impl.monadic
 │   ├── :optional.impl.ref
 │   ├── :optional.impl.relops
+│   ├── :optional.impl.hash
 │   └── :optional.storage
 │       ├── :optional.storage.interface
 │       ├── :optional.storage.impl
@@ -151,7 +152,7 @@ std_impl.optional
 - [x] `std::in_place_t` constructor
 - [x] Converting assignment from `U` and `optional<U>` — `[optional.assign]` ¶14–28
 - [x] Comparisons (`operator==`, `<=>`) — `[optional.relops]`, `[optional.nullops]`, `[optional.comp.with.t]`
-- [ ] `std::hash`
+- [x] `std::hash` — `[optional.hash]`
 - [ ] Range support (`begin` / `end`, P3168)
 
 ---
