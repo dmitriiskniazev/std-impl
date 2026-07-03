@@ -136,7 +136,7 @@ std_impl.optional
 
 ## Phase 2 — C++26 polish
 
-- [x] `optional<T&>` — [interface.cppm](../../src/optional/optional/interface.cppm), [impl/ref.cppm](../../src/optional/optional/impl/ref.cppm); [optional_ref_test.cpp](../../tests/optional/optional_ref_test.cpp)
+- [x] `optional<T&>` — [interface.cppm](../../src/optional/optional/interface.cppm), [impl/ref.cppm](../../src/optional/optional/impl/ref.cppm); [optional_ref_test.cpp](../../tests/optional/optional_ref_test.cpp); C++26 `[optional.ref.ctor]` safety
 - [x] `optional` converting ctor from `U` — `[optional.ctor]` ¶23
 - [x] `optional` converting ctors from `optional<U>` — `[optional.ctor]` ¶28, ¶33
 - [x] `std::in_place_t` constructor

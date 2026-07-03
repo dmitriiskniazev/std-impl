@@ -2,9 +2,63 @@ export module std_impl.optional:optional.impl.ref;
 import std;
 
 import :bad_optional_access;
+import :optional.detail.concepts;
 import :optional.interface;
 
 namespace std_impl::optional {
+    template <typename T>
+    template <typename Arg>
+        requires binds_reference_without_temporary<T&, Arg>
+    constexpr optional<T&>::optional(std::in_place_t, Arg&& arg) {
+        convert_ref_init_val(std::forward<Arg>(arg));
+    }
+
+    template <typename T>
+    template <typename U>
+        requires(
+            not std::is_same_v<std::remove_cv_t<U>, optional<U>> and not std::is_same_v<T&, U>
+            and binds_reference_without_temporary<T&, U&>)
+    constexpr optional<T&>::optional(optional<U>& rhs) noexcept(std::is_nothrow_constructible_v<T&, U&>) {
+        if (rhs.has_value()) {
+            convert_ref_init_val(rhs.value());
+        }
+    }
+
+    template <typename T>
+    template <typename U>
+        requires(
+            not std::is_same_v<std::remove_cv_t<U>, optional<U>> and not std::is_same_v<T&, U>
+            and binds_reference_without_temporary<T&, const U&>)
+    constexpr optional<T&>::optional(const optional<U>& rhs) noexcept(
+        std::is_nothrow_constructible_v<T&, const U&>) {
+        if (rhs.has_value()) {
+            convert_ref_init_val(rhs.value());
+        }
+    }
+
+    template <typename T>
+    template <typename U>
+        requires(
+            not std::is_same_v<std::remove_cv_t<U>, optional<U>> and not std::is_same_v<T&, U>
+            and binds_reference_without_temporary<T&, U>)
+    constexpr optional<T&>::optional(optional<U>&& rhs) noexcept(std::is_nothrow_constructible_v<T&, U>) {
+        if (rhs.has_value()) {
+            convert_ref_init_val(std::move(rhs.value()));
+        }
+    }
+
+    template <typename T>
+    template <typename U>
+        requires(
+            not std::is_same_v<std::remove_cv_t<U>, optional<U>> and not std::is_same_v<T&, U>
+            and binds_reference_without_temporary<T&, const U>)
+    constexpr optional<T&>::optional(const optional<U>&& rhs) noexcept(
+        std::is_nothrow_constructible_v<T&, const U>) {
+        if (rhs.has_value()) {
+            convert_ref_init_val(std::move(rhs.value()));
+        }
+    }
+
     template <typename T>
     constexpr optional<T&>::optional(nullopt_t) noexcept :
         value_{nullptr} {
@@ -74,9 +128,10 @@ namespace std_impl::optional {
 
     template <typename T>
     template <typename U>
+        requires binds_reference_without_temporary<T&, U>
     constexpr auto optional<T&>::emplace(U&& value) noexcept(
         std::is_nothrow_constructible_v<T&, U>) -> T& {
-        value_ = std::addressof(value);
+        convert_ref_init_val(std::forward<U>(value));
         return *value_;
     }
 
