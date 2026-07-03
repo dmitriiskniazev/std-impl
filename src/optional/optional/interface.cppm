@@ -2,6 +2,7 @@ export module std_impl.optional:optional.interface;
 import std;
 
 import :optional.storage;
+import :optional.detail.concepts;
 
 namespace std_impl::optional {
     export struct nullopt_t {
@@ -33,6 +34,17 @@ namespace std_impl::optional {
         template <typename U, typename... Args>
             requires std::constructible_from<value_type, std::initializer_list<U>&, Args...>
         constexpr explicit optional(std::in_place_t, std::initializer_list<U> list, Args&&... args);
+
+        template <typename U>
+            requires(
+                std::constructible_from<value_type, U>
+                and not std::is_same_v<std::remove_cvref_t<U>, std::in_place_t>
+                and not std::is_same_v<std::remove_cvref_t<U>, optional>
+                and not std::is_same_v<std::remove_cvref_t<U>, nullopt_t>
+                and (not std::is_same_v<value_type, bool>
+                    or not is_optional<std::remove_cvref_t<U>>))
+        constexpr explicit(not std::is_convertible_v<U, value_type>)
+            optional(U&& value) noexcept(std::is_nothrow_constructible_v<value_type, U>);
 
         constexpr auto operator=(nullopt_t) noexcept -> optional&;
         auto operator=(const optional& other) -> optional&

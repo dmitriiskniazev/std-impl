@@ -71,6 +71,7 @@ target_sources(std_impl
             src/optional/optional/storage/impl/ctors.cppm
             src/optional/optional/storage/impl/accessors.cppm
             src/optional/optional/storage/impl/lifetime.cppm
+            src/optional/optional/detail/concepts.cppm
             src/optional/optional/interface.cppm
             src/optional/optional/optional.cppm
             src/optional/optional/impl/ctors.cppm
@@ -135,6 +136,7 @@ set(STD_IMPL_OPTIONAL_TESTS
     optional/bad_optional_access_test
     optional/optional_test
     optional/optional_in_place_test
+    optional/optional_convert_test
     optional/make_optional_test
     optional/optional_ref_test
 )
