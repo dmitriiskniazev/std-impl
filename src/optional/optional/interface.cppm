@@ -26,6 +26,14 @@ namespace std_impl::optional {
             requires std::move_constructible<value_type>;
         constexpr optional(value_type value);
 
+        template <typename... Args>
+            requires std::constructible_from<value_type, Args...>
+        constexpr explicit optional(std::in_place_t, Args&&... args);
+
+        template <typename U, typename... Args>
+            requires std::constructible_from<value_type, std::initializer_list<U>&, Args...>
+        constexpr explicit optional(std::in_place_t, std::initializer_list<U> list, Args&&... args);
+
         constexpr auto operator=(nullopt_t) noexcept -> optional&;
         auto operator=(const optional& other) -> optional&
             requires std::copy_constructible<value_type>;
