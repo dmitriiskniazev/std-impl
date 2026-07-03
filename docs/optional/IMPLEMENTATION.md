@@ -33,6 +33,7 @@ import std_impl.optional;      // granular
 | Path under `src/optional/` | Namespace | Public symbol |
 |------------------------------|-----------|---------------|
 | `optional/` | `std_impl::optional` | `optional`, `nullopt_t`, `nullopt`, `swap` |
+| `optional/detail/` | `std_impl::optional` | `binds_reference_without_temporary`, `converts_from_*`, … |
 | `optional/storage/` | `std_impl::optional::storage` | `storage`, `nothrow_*` concepts |
 | `bad_optional_access/` | `std_impl::bad_optional_access` | `bad_optional_access` |
 | `make_optional/` | `std_impl::make_optional` | `make_optional` |
@@ -77,7 +78,11 @@ Implementation objects nest under the parent they serve (same pattern):
 optional/
   optional.cppm        # :optional facade
   interface.cppm
+  detail/
+    concepts.cppm      # :optional.detail.concepts
   impl/ctors.cppm …
+  impl/assign.cppm
+  impl/ref.cppm
   storage/
     storage.cppm       # :optional.storage facade
     interface.cppm
@@ -103,10 +108,13 @@ src/optional/
 std_impl.optional
 ├── :optional
 │   ├── :optional.interface
+│   ├── :optional.detail.concepts
 │   ├── :optional.impl.ctors
+│   ├── :optional.impl.assign
 │   ├── :optional.impl.observers
 │   ├── :optional.impl.modifiers
 │   ├── :optional.impl.monadic
+│   ├── :optional.impl.ref
 │   └── :optional.storage
 │       ├── :optional.storage.interface
 │       ├── :optional.storage.impl
