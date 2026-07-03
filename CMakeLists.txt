@@ -80,6 +80,7 @@ target_sources(std_impl
             src/optional/optional/impl/modifiers.cppm
             src/optional/optional/impl/monadic.cppm
             src/optional/optional/impl/ref.cppm
+            src/optional/optional/impl/relops.cppm
             src/optional/bad_optional_access/bad_optional_access.cppm
             src/optional/bad_optional_access/interface.cppm
             src/optional/bad_optional_access/impl.cppm
@@ -142,6 +143,7 @@ set(STD_IMPL_OPTIONAL_TESTS
     optional/optional_assign_test
     optional/make_optional_test
     optional/optional_ref_test
+    optional/optional_relops_test
 )
 
 foreach(rel_path IN LISTS STD_IMPL_OPTIONAL_TESTS)
