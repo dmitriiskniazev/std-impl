@@ -116,14 +116,48 @@ namespace std_impl::optional {
         constexpr optional(const optional&) noexcept = default;
         constexpr optional(optional&&) noexcept = default;
 
+        template <typename Arg>
+            requires binds_reference_without_temporary<T&, Arg>
+        constexpr explicit optional(std::in_place_t, Arg&& arg);
+
         template <typename U>
-            requires(not std::is_same_v<std::remove_cvref_t<U>, optional<T&>>
+            requires(
+                not std::is_same_v<std::remove_cvref_t<U>, optional<T&>>
+                and not std::is_same_v<std::remove_cvref_t<U>, std::in_place_t>
                 and not std::is_same_v<std::remove_cvref_t<U>, nullopt_t>
-                and std::is_constructible_v<T&, U>)
+                and binds_reference_without_temporary<T&, U>)
         constexpr explicit(not std::is_convertible_v<U, T&>)
             optional(U&& value) noexcept(std::is_nothrow_constructible_v<T&, U>) :
-            value_{std::addressof(value)} {
+            optional{std::in_place, std::forward<U>(value)} {
         }
+
+        template <typename U>
+            requires(
+                not std::is_same_v<std::remove_cv_t<U>, optional<U>> and not std::is_same_v<T&, U>
+                and binds_reference_without_temporary<T&, U&>)
+        constexpr explicit(not std::is_convertible_v<U&, T&>)
+            optional(optional<U>& rhs) noexcept(std::is_nothrow_constructible_v<T&, U&>);
+
+        template <typename U>
+            requires(
+                not std::is_same_v<std::remove_cv_t<U>, optional<U>> and not std::is_same_v<T&, U>
+                and binds_reference_without_temporary<T&, const U&>)
+        constexpr explicit(not std::is_convertible_v<const U&, T&>)
+            optional(const optional<U>& rhs) noexcept(std::is_nothrow_constructible_v<T&, const U&>);
+
+        template <typename U>
+            requires(
+                not std::is_same_v<std::remove_cv_t<U>, optional<U>> and not std::is_same_v<T&, U>
+                and binds_reference_without_temporary<T&, U>)
+        constexpr explicit(not std::is_convertible_v<U, T&>)
+            optional(optional<U>&& rhs) noexcept(std::is_nothrow_constructible_v<T&, U>);
+
+        template <typename U>
+            requires(
+                not std::is_same_v<std::remove_cv_t<U>, optional<U>> and not std::is_same_v<T&, U>
+                and binds_reference_without_temporary<T&, const U>)
+        constexpr explicit(not std::is_convertible_v<const U, T&>)
+            optional(const optional<U>&& rhs) noexcept(std::is_nothrow_constructible_v<T&, const U>);
 
         constexpr auto operator=(nullopt_t) noexcept -> optional&;
         constexpr auto operator=(optional& rhs) noexcept -> optional&;
@@ -131,11 +165,12 @@ namespace std_impl::optional {
         constexpr auto operator=(optional&& rhs) noexcept -> optional&;
 
         template <typename U>
-            requires(not std::is_same_v<std::remove_cvref_t<U>, optional<T&>>
-                and std::is_constructible_v<T&, U>)
+            requires(
+                not std::is_same_v<std::remove_cvref_t<U>, optional<T&>>
+                and binds_reference_without_temporary<T&, U>)
         constexpr auto operator=(U&& value) noexcept(std::is_nothrow_constructible_v<T&, U>)
             -> optional& {
-            value_ = std::addressof(value);
+            convert_ref_init_val(std::forward<U>(value));
             return *this;
         }
 
@@ -149,6 +184,7 @@ namespace std_impl::optional {
         [[nodiscard]] constexpr auto value_or(U&& default_value) const -> T;
 
         template <typename U>
+            requires binds_reference_without_temporary<T&, U>
         constexpr auto emplace(U&& value) noexcept(std::is_nothrow_constructible_v<T&, U>) -> T&;
         constexpr auto reset() noexcept -> void;
         constexpr auto swap(optional& other) noexcept -> void;
@@ -158,6 +194,11 @@ namespace std_impl::optional {
         [[nodiscard]] constexpr auto or_else(this const auto& self, auto&& function) -> auto;
 
     private:
+        template <typename U>
+        constexpr auto convert_ref_init_val(U&& value) -> void {
+            value_ = std::addressof(static_cast<U&&>(value));
+        }
+
         T* value_{nullptr};
     };
 

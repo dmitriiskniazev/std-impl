@@ -46,4 +46,9 @@ namespace std_impl::optional {
         and not std::assignable_from<T&, optional<U>&&>
         and not std::assignable_from<T&, const optional<U>&>
         and not std::assignable_from<T&, const optional<U>&&>;
+
+    export template <typename Reference, typename From>
+    concept binds_reference_without_temporary =
+        std::is_constructible_v<Reference, From>
+        and not std::reference_constructs_from_temporary_v<Reference, From>;
 }  // namespace std_impl::optional
