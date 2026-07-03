@@ -115,6 +115,7 @@ std_impl.optional
 │   ├── :optional.impl.modifiers
 │   ├── :optional.impl.monadic
 │   ├── :optional.impl.ref
+│   ├── :optional.impl.relops
 │   └── :optional.storage
 │       ├── :optional.storage.interface
 │       ├── :optional.storage.impl
@@ -149,7 +150,8 @@ std_impl.optional
 - [x] `optional` converting ctors from `optional<U>` — `[optional.ctor]` ¶28, ¶33
 - [x] `std::in_place_t` constructor
 - [x] Converting assignment from `U` and `optional<U>` — `[optional.assign]` ¶14–28
-- [ ] Comparisons (`operator==`, `<=>`) and `std::hash`
+- [x] Comparisons (`operator==`, `<=>`) — `[optional.relops]`, `[optional.nullops]`, `[optional.comp.with.t]`
+- [ ] `std::hash`
 - [ ] Range support (`begin` / `end`, P3168)
 
 ---
