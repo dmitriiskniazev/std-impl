@@ -13,5 +13,11 @@ auto main() -> int {
     const optional<int> port = make_optional<int>(443);
     assert(port.has_value() and port.value() == 443);
 
+    const optional<std::string> banner = make_optional<std::string>(4, '-');
+    assert(banner.has_value() and banner.value() == "----");
+
+    const optional<std::vector<int>> values = make_optional<std::vector<int>>({1, 2, 3});
+    assert(values.has_value() and values->size() == 3 and (*values)[1] == 2);
+
     return 0;
 }
