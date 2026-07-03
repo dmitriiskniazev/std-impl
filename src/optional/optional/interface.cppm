@@ -46,6 +46,22 @@ namespace std_impl::optional {
         constexpr explicit(not std::is_convertible_v<U, value_type>)
             optional(U&& value) noexcept(std::is_nothrow_constructible_v<value_type, U>);
 
+        template <typename U>
+            requires(
+                std::constructible_from<value_type, const U&>
+                and (std::is_same_v<value_type, bool>
+                    or not converts_from_any_cvref<value_type, optional<U>>))
+        constexpr explicit(not std::is_convertible_v<const U&, value_type>)
+            optional(const optional<U>& other);
+
+        template <typename U>
+            requires(
+                std::constructible_from<value_type, U>
+                and (std::is_same_v<value_type, bool>
+                    or not converts_from_any_cvref<value_type, optional<U>>))
+        constexpr explicit(not std::is_convertible_v<U, value_type>)
+            optional(optional<U>&& other);
+
         constexpr auto operator=(nullopt_t) noexcept -> optional&;
         auto operator=(const optional& other) -> optional&
             requires std::copy_constructible<value_type>;

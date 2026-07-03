@@ -61,6 +61,30 @@ namespace std_impl::optional {
     }
 
     template <typename T>
+    template <typename U>
+        requires(
+            std::constructible_from<typename optional<T>::value_type, const U&>
+            and (std::is_same_v<typename optional<T>::value_type, bool>
+                or not converts_from_any_cvref<typename optional<T>::value_type, optional<U>>))
+    constexpr optional<T>::optional(const optional<U>& other) {
+        if (other.has_value()) {
+            storage_.emplace(*other);
+        }
+    }
+
+    template <typename T>
+    template <typename U>
+        requires(
+            std::constructible_from<typename optional<T>::value_type, U>
+            and (std::is_same_v<typename optional<T>::value_type, bool>
+                or not converts_from_any_cvref<typename optional<T>::value_type, optional<U>>))
+    constexpr optional<T>::optional(optional<U>&& other) {
+        if (other.has_value()) {
+            storage_.emplace(std::move(*other));
+        }
+    }
+
+    template <typename T>
     constexpr auto optional<T>::operator=(nullopt_t) noexcept -> optional& {
         storage_.reset();
         return *this;
