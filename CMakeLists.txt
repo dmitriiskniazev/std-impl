@@ -75,6 +75,7 @@ target_sources(std_impl
             src/optional/optional/interface.cppm
             src/optional/optional/optional.cppm
             src/optional/optional/impl/ctors.cppm
+            src/optional/optional/impl/assign.cppm
             src/optional/optional/impl/observers.cppm
             src/optional/optional/impl/modifiers.cppm
             src/optional/optional/impl/monadic.cppm
@@ -138,6 +139,7 @@ set(STD_IMPL_OPTIONAL_TESTS
     optional/optional_in_place_test
     optional/optional_convert_test
     optional/optional_convert_from_optional_test
+    optional/optional_assign_test
     optional/make_optional_test
     optional/optional_ref_test
 )
