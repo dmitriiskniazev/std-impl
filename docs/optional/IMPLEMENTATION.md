@@ -138,7 +138,7 @@ std_impl.optional
 
 - [x] `optional<T&>` — [interface.cppm](../../src/optional/optional/interface.cppm), [impl/ref.cppm](../../src/optional/optional/impl/ref.cppm); [optional_ref_test.cpp](../../tests/optional/optional_ref_test.cpp)
 - [ ] `optional` converting ctors from `U` / `optional<U>`
-- [ ] `std::in_place_t` constructor
+- [x] `std::in_place_t` constructor
 - [ ] Comparisons (`operator==`, `<=>`) and `std::hash`
 - [ ] Range support (`begin` / `end`, P3168)
 

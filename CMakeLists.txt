@@ -134,6 +134,7 @@ set(STD_IMPL_OPTIONAL_TESTS
     optional/nullopt_test
     optional/bad_optional_access_test
     optional/optional_test
+    optional/optional_in_place_test
     optional/make_optional_test
     optional/optional_ref_test
 )
