@@ -70,6 +70,18 @@ namespace std_impl::optional {
             requires std::move_constructible<value_type>;
         constexpr auto operator=(value_type value) -> optional&;
 
+        template <typename U>
+            requires assignable_from_converted_value<value_type, U>
+        constexpr auto operator=(U&& value) -> optional&;
+
+        template <typename U>
+            requires assignable_from_optional_value<value_type, U, const U&>
+        constexpr auto operator=(const optional<U>& other) -> optional&;
+
+        template <typename U>
+            requires assignable_from_optional_value<value_type, U, U>
+        constexpr auto operator=(optional<U>&& other) -> optional&;
+
         [[nodiscard]] constexpr auto has_value() const noexcept -> bool;
         [[nodiscard]] constexpr explicit operator bool() const noexcept;
         [[nodiscard]] constexpr auto value(this auto&& self) -> decltype(auto);

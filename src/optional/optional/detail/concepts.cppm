@@ -31,4 +31,19 @@ namespace std_impl::optional {
     concept converts_from_any_cvref = converts_from_lvalue_ref<T, W>
         or converts_from_rvalue<T, W> or converts_from_const_lvalue_ref<T, W>
         or converts_from_const_rvalue<T, W>;
+
+    export template <typename T, typename U>
+    concept assignable_from_converted_value =
+        not std::is_same_v<std::remove_cvref_t<U>, optional<T>>
+        and not(std::is_scalar_v<T> and std::is_same_v<T, std::decay_t<U>>)
+        and std::constructible_from<T, U> and std::assignable_from<T&, U>;
+
+    export template <typename T, typename U, typename Value>
+    concept assignable_from_optional_value =
+        std::constructible_from<T, Value> and std::assignable_from<T&, Value>
+        and not converts_from_any_cvref<T, optional<U>>
+        and not std::assignable_from<T&, optional<U>&>
+        and not std::assignable_from<T&, optional<U>&&>
+        and not std::assignable_from<T&, const optional<U>&>
+        and not std::assignable_from<T&, const optional<U>&&>;
 }  // namespace std_impl::optional

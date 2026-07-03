@@ -140,6 +140,7 @@ std_impl.optional
 - [x] `optional` converting ctor from `U` — `[optional.ctor]` ¶23
 - [x] `optional` converting ctors from `optional<U>` — `[optional.ctor]` ¶28, ¶33
 - [x] `std::in_place_t` constructor
+- [x] Converting assignment from `U` and `optional<U>` — `[optional.assign]` ¶14–28
 - [ ] Comparisons (`operator==`, `<=>`) and `std::hash`
 - [ ] Range support (`begin` / `end`, P3168)
 
