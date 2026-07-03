@@ -40,7 +40,8 @@ namespace std_impl::optional {
     template <typename T>
     template <typename U, typename... Args>
         requires std::constructible_from<typename optional<T>::value_type,
-            std::initializer_list<U>&, Args...>
+            std::initializer_list<U>&,
+            Args...>
     constexpr optional<T>::optional(
         std::in_place_t, std::initializer_list<U> list, Args&&... args) {
         storage_.emplace(list, std::forward<Args>(args)...);
@@ -48,8 +49,7 @@ namespace std_impl::optional {
 
     template <typename T>
     template <typename U>
-        requires(
-            std::constructible_from<typename optional<T>::value_type, U>
+        requires(std::constructible_from<typename optional<T>::value_type, U>
             and not std::is_same_v<std::remove_cvref_t<U>, std::in_place_t>
             and not std::is_same_v<std::remove_cvref_t<U>, optional<T>>
             and not std::is_same_v<std::remove_cvref_t<U>, nullopt_t>
@@ -62,8 +62,7 @@ namespace std_impl::optional {
 
     template <typename T>
     template <typename U>
-        requires(
-            std::constructible_from<typename optional<T>::value_type, const U&>
+        requires(std::constructible_from<typename optional<T>::value_type, const U&>
             and (std::is_same_v<typename optional<T>::value_type, bool>
                 or not converts_from_any_cvref<typename optional<T>::value_type, optional<U>>))
     constexpr optional<T>::optional(const optional<U>& other) {
@@ -74,8 +73,7 @@ namespace std_impl::optional {
 
     template <typename T>
     template <typename U>
-        requires(
-            std::constructible_from<typename optional<T>::value_type, U>
+        requires(std::constructible_from<typename optional<T>::value_type, U>
             and (std::is_same_v<typename optional<T>::value_type, bool>
                 or not converts_from_any_cvref<typename optional<T>::value_type, optional<U>>))
     constexpr optional<T>::optional(optional<U>&& other) {

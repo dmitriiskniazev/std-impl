@@ -15,10 +15,10 @@ namespace std_impl::optional {
 
     template <typename T>
     template <typename U>
-        requires(
-            not std::is_same_v<std::remove_cv_t<U>, optional<U>> and not std::is_same_v<T&, U>
+        requires(not std::is_same_v<std::remove_cv_t<U>, optional<U>> and not std::is_same_v<T&, U>
             and binds_reference_without_temporary<T&, U&>)
-    constexpr optional<T&>::optional(optional<U>& rhs) noexcept(std::is_nothrow_constructible_v<T&, U&>) {
+    constexpr optional<T&>::optional(optional<U>& rhs) noexcept(
+        std::is_nothrow_constructible_v<T&, U&>) {
         if (rhs.has_value()) {
             convert_ref_init_val(rhs.value());
         }
@@ -26,8 +26,7 @@ namespace std_impl::optional {
 
     template <typename T>
     template <typename U>
-        requires(
-            not std::is_same_v<std::remove_cv_t<U>, optional<U>> and not std::is_same_v<T&, U>
+        requires(not std::is_same_v<std::remove_cv_t<U>, optional<U>> and not std::is_same_v<T&, U>
             and binds_reference_without_temporary<T&, const U&>)
     constexpr optional<T&>::optional(const optional<U>& rhs) noexcept(
         std::is_nothrow_constructible_v<T&, const U&>) {
@@ -38,10 +37,10 @@ namespace std_impl::optional {
 
     template <typename T>
     template <typename U>
-        requires(
-            not std::is_same_v<std::remove_cv_t<U>, optional<U>> and not std::is_same_v<T&, U>
+        requires(not std::is_same_v<std::remove_cv_t<U>, optional<U>> and not std::is_same_v<T&, U>
             and binds_reference_without_temporary<T&, U>)
-    constexpr optional<T&>::optional(optional<U>&& rhs) noexcept(std::is_nothrow_constructible_v<T&, U>) {
+    constexpr optional<T&>::optional(optional<U>&& rhs) noexcept(
+        std::is_nothrow_constructible_v<T&, U>) {
         if (rhs.has_value()) {
             convert_ref_init_val(std::move(rhs.value()));
         }
@@ -49,8 +48,7 @@ namespace std_impl::optional {
 
     template <typename T>
     template <typename U>
-        requires(
-            not std::is_same_v<std::remove_cv_t<U>, optional<U>> and not std::is_same_v<T&, U>
+        requires(not std::is_same_v<std::remove_cv_t<U>, optional<U>> and not std::is_same_v<T&, U>
             and binds_reference_without_temporary<T&, const U>)
     constexpr optional<T&>::optional(const optional<U>&& rhs) noexcept(
         std::is_nothrow_constructible_v<T&, const U>) {

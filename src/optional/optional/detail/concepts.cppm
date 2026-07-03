@@ -28,9 +28,8 @@ namespace std_impl::optional {
     concept converts_from_const_rvalue = constructible_or_convertible_from<T, const W>;
 
     export template <typename T, typename W>
-    concept converts_from_any_cvref = converts_from_lvalue_ref<T, W>
-        or converts_from_rvalue<T, W> or converts_from_const_lvalue_ref<T, W>
-        or converts_from_const_rvalue<T, W>;
+    concept converts_from_any_cvref = converts_from_lvalue_ref<T, W> or converts_from_rvalue<T, W>
+        or converts_from_const_lvalue_ref<T, W> or converts_from_const_rvalue<T, W>;
 
     export template <typename T, typename U>
     concept assignable_from_converted_value =
@@ -39,16 +38,14 @@ namespace std_impl::optional {
         and std::constructible_from<T, U> and std::assignable_from<T&, U>;
 
     export template <typename T, typename U, typename Value>
-    concept assignable_from_optional_value =
-        std::constructible_from<T, Value> and std::assignable_from<T&, Value>
-        and not converts_from_any_cvref<T, optional<U>>
+    concept assignable_from_optional_value = std::constructible_from<T, Value>
+        and std::assignable_from<T&, Value> and not converts_from_any_cvref<T, optional<U>>
         and not std::assignable_from<T&, optional<U>&>
         and not std::assignable_from<T&, optional<U>&&>
         and not std::assignable_from<T&, const optional<U>&>
         and not std::assignable_from<T&, const optional<U>&&>;
 
     export template <typename Reference, typename From>
-    concept binds_reference_without_temporary =
-        std::is_constructible_v<Reference, From>
+    concept binds_reference_without_temporary = std::is_constructible_v<Reference, From>
         and not std::reference_constructs_from_temporary_v<Reference, From>;
 }  // namespace std_impl::optional

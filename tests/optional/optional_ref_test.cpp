@@ -8,7 +8,8 @@ using std_impl::optional::optional;
 
 template <typename Reference, typename From>
 consteval auto binds_without_temporary() -> bool {
-    return requires(From&& value) { optional<Reference>{std::in_place, std::forward<From>(value)}; };
+    return requires(
+        From&& value) { optional<Reference>{std::in_place, std::forward<From>(value)}; };
 }
 
 auto main() -> int {
