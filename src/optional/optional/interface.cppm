@@ -195,4 +195,51 @@ namespace std_impl::optional {
 
     export template <typename T>
     auto swap(optional<T&>& lhs, optional<T&>& rhs) noexcept -> void;
+
+    export template <typename T, typename U>
+        requires requires(const T& lhs_value, const U& rhs_value) {
+            { lhs_value == rhs_value } -> std::convertible_to<bool>;
+        }
+    constexpr auto operator==(const optional<T>& lhs, const optional<U>& rhs) -> bool;
+
+    export template <typename T, typename U>
+        requires std::three_way_comparable_with<T, U>
+    constexpr auto operator<=>(const optional<T>& lhs, const optional<U>& rhs)
+        -> std::compare_three_way_result_t<T, U>;
+
+    export template <typename T>
+    constexpr auto operator==(const optional<T>& opt, nullopt_t) noexcept -> bool;
+
+    export template <typename T>
+    constexpr auto operator==(nullopt_t, const optional<T>& opt) noexcept -> bool;
+
+    export template <typename T>
+    constexpr auto operator<=>(const optional<T>& opt, nullopt_t) noexcept -> std::strong_ordering;
+
+    export template <typename T>
+    constexpr auto operator<=>(nullopt_t, const optional<T>& opt) noexcept -> std::strong_ordering;
+
+    export template <typename T, typename U>
+        requires(not is_optional<std::remove_cvref_t<U>>
+            and requires(const T& lhs_value, const U& rhs_value) {
+                { lhs_value == rhs_value } -> std::convertible_to<bool>;
+            })
+    constexpr auto operator==(const optional<T>& opt, const U& value) -> bool;
+
+    export template <typename T, typename U>
+        requires(not is_optional<std::remove_cvref_t<U>>
+            and requires(const T& lhs_value, const U& rhs_value) {
+                { lhs_value == rhs_value } -> std::convertible_to<bool>;
+            })
+    constexpr auto operator==(const U& value, const optional<T>& opt) -> bool;
+
+    export template <typename T, typename U>
+        requires(not is_optional<std::remove_cvref_t<U>> and std::three_way_comparable_with<T, U>)
+    constexpr auto operator<=>(const optional<T>& opt, const U& value)
+        -> std::compare_three_way_result_t<T, U>;
+
+    export template <typename T, typename U>
+        requires(not is_optional<std::remove_cvref_t<U>> and std::three_way_comparable_with<T, U>)
+    constexpr auto operator<=>(const U& value, const optional<T>& opt)
+        -> std::compare_three_way_result_t<T, U>;
 }  // namespace std_impl::optional
