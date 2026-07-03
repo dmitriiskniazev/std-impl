@@ -130,7 +130,7 @@ std_impl.optional
 - [x] `bad_optional_access`
 - [x] `optional` — storage, observers, `emplace`, `reset`, `swap`
 - [x] Monadic: `and_then`, `transform`, `or_else`
-- [x] `make_optional`
+- [x] `make_optional` via `optional(in_place, …)` — `[optional.specalg]` ¶5–6
 
 ---
 
