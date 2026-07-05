@@ -82,6 +82,7 @@ target_sources(std_impl
             src/optional/optional/impl/ref.cppm
             src/optional/optional/impl/relops.cppm
             src/optional/optional/impl/hash.cppm
+            src/optional/optional/impl/ranges.cppm
             src/optional/bad_optional_access/bad_optional_access.cppm
             src/optional/bad_optional_access/interface.cppm
             src/optional/bad_optional_access/impl.cppm
@@ -146,6 +147,7 @@ set(STD_IMPL_OPTIONAL_TESTS
     optional/optional_ref_test
     optional/optional_relops_test
     optional/optional_hash_test
+    optional/optional_ranges_test
 )
 
 foreach(rel_path IN LISTS STD_IMPL_OPTIONAL_TESTS)

@@ -95,6 +95,14 @@ namespace std_impl::optional {
         [[nodiscard]] constexpr auto transform(this auto&& self, auto&& f) -> auto;
         [[nodiscard]] constexpr auto or_else(this const auto& self, auto&& f) -> auto;
 
+        using iterator = value_type*;
+        using const_iterator = const value_type*;
+
+        constexpr auto begin() noexcept -> iterator;
+        constexpr auto begin() const noexcept -> const_iterator;
+        constexpr auto end() noexcept -> iterator;
+        constexpr auto end() const noexcept -> const_iterator;
+
     private:
         storage::storage<value_type> storage_;
     };
@@ -183,6 +191,11 @@ namespace std_impl::optional {
         [[nodiscard]] constexpr auto and_then(this auto&& self, auto&& function) -> auto;
         [[nodiscard]] constexpr auto transform(this auto&& self, auto&& function) -> auto;
         [[nodiscard]] constexpr auto or_else(this const auto& self, auto&& function) -> auto;
+
+        using iterator = value_type*;
+
+        constexpr auto begin() const noexcept -> iterator;
+        constexpr auto end() const noexcept -> iterator;
 
     private:
         template <typename U>

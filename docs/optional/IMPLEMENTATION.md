@@ -117,6 +117,7 @@ std_impl.optional
 │   ├── :optional.impl.ref
 │   ├── :optional.impl.relops
 │   ├── :optional.impl.hash
+│   ├── :optional.impl.ranges
 │   └── :optional.storage
 │       ├── :optional.storage.interface
 │       ├── :optional.storage.impl
@@ -153,7 +154,7 @@ std_impl.optional
 - [x] Converting assignment from `U` and `optional<U>` — `[optional.assign]` ¶14–28
 - [x] Comparisons (`operator==`, `<=>`) — `[optional.relops]`, `[optional.nullops]`, `[optional.comp.with.t]`
 - [x] `std::hash` — `[optional.hash]`
-- [ ] Range support (`begin` / `end`, P3168)
+- [x] Range support (`begin` / `end`, P3168) — `[optional.iterators]`, `ranges::enable_view`, `enable_borrowed_range` for `optional<T&>`
 
 ---
 
