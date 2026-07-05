@@ -9,3 +9,4 @@ import :optional.impl.monadic;
 import :optional.impl.ref;
 import :optional.impl.relops;
 import :optional.impl.hash;
+import :optional.impl.ranges;
