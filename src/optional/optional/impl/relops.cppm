@@ -1,13 +1,12 @@
 export module std_impl.optional:optional.impl.relops;
 import std;
 
+import :optional.detail.concepts;
 import :optional.interface;
 
 namespace std_impl::optional {
     template <typename T, typename U>
-        requires requires(const T& lhs_value, const U& rhs_value) {
-            { lhs_value == rhs_value } -> std::convertible_to<bool>;
-        }
+        requires optional_values_equal_comparable<T, U>
     constexpr auto operator==(const optional<T>& lhs, const optional<U>& rhs) -> bool {
         if (static_cast<bool>(lhs) != static_cast<bool>(rhs)) {
             return false;
@@ -51,25 +50,19 @@ namespace std_impl::optional {
     }
 
     template <typename T, typename U>
-        requires(not is_optional<std::remove_cvref_t<U>>
-            and requires(const T& lhs_value, const U& rhs_value) {
-                { lhs_value == rhs_value } -> std::convertible_to<bool>;
-            })
+        requires optional_value_equal_comparable<T, U>
     constexpr auto operator==(const optional<T>& opt, const U& value) -> bool {
         return opt.has_value() ? opt.value() == value : false;
     }
 
     template <typename T, typename U>
-        requires(not is_optional<std::remove_cvref_t<U>>
-            and requires(const T& lhs_value, const U& rhs_value) {
-                { lhs_value == rhs_value } -> std::convertible_to<bool>;
-            })
+        requires optional_value_equal_comparable<T, U>
     constexpr auto operator==(const U& value, const optional<T>& opt) -> bool {
         return opt == value;
     }
 
     template <typename T, typename U>
-        requires(not is_optional<std::remove_cvref_t<U>> and std::three_way_comparable_with<T, U>)
+        requires optional_value_three_way_comparable<T, U>
     constexpr auto operator<=>(const optional<T>& opt, const U& value)
         -> std::compare_three_way_result_t<T, U> {
         if (opt.has_value()) {
@@ -80,7 +73,7 @@ namespace std_impl::optional {
     }
 
     template <typename T, typename U>
-        requires(not is_optional<std::remove_cvref_t<U>> and std::three_way_comparable_with<T, U>)
+        requires optional_value_three_way_comparable<T, U>
     constexpr auto operator<=>(const U& value, const optional<T>& opt)
         -> std::compare_three_way_result_t<T, U> {
         if (opt.has_value()) {

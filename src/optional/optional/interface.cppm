@@ -37,26 +37,17 @@ namespace std_impl::optional {
             std::in_place_t, std::initializer_list<U> list, Args&&... args);
 
         template <typename U>
-            requires(std::constructible_from<value_type, U>
-                and not std::is_same_v<std::remove_cvref_t<U>, std::in_place_t>
-                and not std::is_same_v<std::remove_cvref_t<U>, optional>
-                and not std::is_same_v<std::remove_cvref_t<U>, nullopt_t>
-                and (not std::is_same_v<value_type, bool>
-                    or not is_optional<std::remove_cvref_t<U>>))
+            requires constructible_from_external_value<value_type, U>
         constexpr explicit(not std::is_convertible_v<U, value_type>)
             optional(U&& value) noexcept(std::is_nothrow_constructible_v<value_type, U>);
 
         template <typename U>
-            requires(std::constructible_from<value_type, const U&>
-                and (std::is_same_v<value_type, bool>
-                    or not converts_from_any_cvref<value_type, optional<U>>))
+            requires constructible_from_other_optional<value_type, U, const U&>
         constexpr explicit(not std::is_convertible_v<const U&, value_type>)
             optional(const optional<U>& other);
 
         template <typename U>
-            requires(std::constructible_from<value_type, U>
-                and (std::is_same_v<value_type, bool>
-                    or not converts_from_any_cvref<value_type, optional<U>>))
+            requires constructible_from_other_optional<value_type, U, U>
         constexpr explicit(not std::is_convertible_v<U, value_type>) optional(optional<U>&& other);
 
         constexpr auto operator=(nullopt_t) noexcept -> optional&;
@@ -118,36 +109,29 @@ namespace std_impl::optional {
         constexpr explicit optional(std::in_place_t, Arg&& arg);
 
         template <typename U>
-            requires(not std::is_same_v<std::remove_cvref_t<U>, optional<T&>>
-                and not std::is_same_v<std::remove_cvref_t<U>, std::in_place_t>
-                and not std::is_same_v<std::remove_cvref_t<U>, nullopt_t>
-                and binds_reference_without_temporary<T&, U>)
+            requires constructible_ref_from_external_value<T, U>
         constexpr explicit(not std::is_convertible_v<U, T&>)
             optional(U&& value) noexcept(std::is_nothrow_constructible_v<T&, U>) :
             optional{std::in_place, std::forward<U>(value)} {
         }
 
         template <typename U>
-            requires(not std::is_same_v<std::remove_cv_t<U>, optional<U>>
-                and not std::is_same_v<T&, U> and binds_reference_without_temporary<T&, U&>)
+            requires constructible_ref_from_other_optional<T, U, U&>
         constexpr explicit(not std::is_convertible_v<U&, T&>)
             optional(optional<U>& rhs) noexcept(std::is_nothrow_constructible_v<T&, U&>);
 
         template <typename U>
-            requires(not std::is_same_v<std::remove_cv_t<U>, optional<U>>
-                and not std::is_same_v<T&, U> and binds_reference_without_temporary<T&, const U&>)
+            requires constructible_ref_from_other_optional<T, U, const U&>
         constexpr explicit(not std::is_convertible_v<const U&, T&>) optional(
             const optional<U>& rhs) noexcept(std::is_nothrow_constructible_v<T&, const U&>);
 
         template <typename U>
-            requires(not std::is_same_v<std::remove_cv_t<U>, optional<U>>
-                and not std::is_same_v<T&, U> and binds_reference_without_temporary<T&, U>)
+            requires constructible_ref_from_other_optional<T, U, U>
         constexpr explicit(not std::is_convertible_v<U, T&>)
             optional(optional<U>&& rhs) noexcept(std::is_nothrow_constructible_v<T&, U>);
 
         template <typename U>
-            requires(not std::is_same_v<std::remove_cv_t<U>, optional<U>>
-                and not std::is_same_v<T&, U> and binds_reference_without_temporary<T&, const U>)
+            requires constructible_ref_from_other_optional<T, U, const U>
         constexpr explicit(not std::is_convertible_v<const U, T&>) optional(
             const optional<U>&& rhs) noexcept(std::is_nothrow_constructible_v<T&, const U>);
 
@@ -157,8 +141,7 @@ namespace std_impl::optional {
         constexpr auto operator=(optional&& rhs) noexcept -> optional&;
 
         template <typename U>
-            requires(not std::is_same_v<std::remove_cvref_t<U>, optional<T&>>
-                and binds_reference_without_temporary<T&, U>)
+            requires assignable_ref_from_external_value<T, U>
         constexpr auto operator=(U&& value) noexcept(std::is_nothrow_constructible_v<T&, U>)
             -> optional& {
             convert_ref_init_val(std::forward<U>(value));
@@ -197,9 +180,7 @@ namespace std_impl::optional {
     auto swap(optional<T&>& lhs, optional<T&>& rhs) noexcept -> void;
 
     export template <typename T, typename U>
-        requires requires(const T& lhs_value, const U& rhs_value) {
-            { lhs_value == rhs_value } -> std::convertible_to<bool>;
-        }
+        requires optional_values_equal_comparable<T, U>
     constexpr auto operator==(const optional<T>& lhs, const optional<U>& rhs) -> bool;
 
     export template <typename T, typename U>
@@ -220,26 +201,20 @@ namespace std_impl::optional {
     constexpr auto operator<=>(nullopt_t, const optional<T>& opt) noexcept -> std::strong_ordering;
 
     export template <typename T, typename U>
-        requires(not is_optional<std::remove_cvref_t<U>>
-            and requires(const T& lhs_value, const U& rhs_value) {
-                { lhs_value == rhs_value } -> std::convertible_to<bool>;
-            })
+        requires optional_value_equal_comparable<T, U>
     constexpr auto operator==(const optional<T>& opt, const U& value) -> bool;
 
     export template <typename T, typename U>
-        requires(not is_optional<std::remove_cvref_t<U>>
-            and requires(const T& lhs_value, const U& rhs_value) {
-                { lhs_value == rhs_value } -> std::convertible_to<bool>;
-            })
+        requires optional_value_equal_comparable<T, U>
     constexpr auto operator==(const U& value, const optional<T>& opt) -> bool;
 
     export template <typename T, typename U>
-        requires(not is_optional<std::remove_cvref_t<U>> and std::three_way_comparable_with<T, U>)
+        requires optional_value_three_way_comparable<T, U>
     constexpr auto operator<=>(const optional<T>& opt, const U& value)
         -> std::compare_three_way_result_t<T, U>;
 
     export template <typename T, typename U>
-        requires(not is_optional<std::remove_cvref_t<U>> and std::three_way_comparable_with<T, U>)
+        requires optional_value_three_way_comparable<T, U>
     constexpr auto operator<=>(const U& value, const optional<T>& opt)
         -> std::compare_three_way_result_t<T, U>;
 }  // namespace std_impl::optional

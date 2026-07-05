@@ -132,6 +132,18 @@ std_impl.optional
     └── :make_optional.impl
 ```
 
+**Detail concepts** ([concepts.cppm](../../src/optional/optional/detail/concepts.cppm)):
+
+| Concept | Use |
+|---------|-----|
+| `constructible_from_external_value<T, U>` | `[optional.ctor]` ¶23 converting from `U` |
+| `constructible_from_other_optional<T, U, Value>` | `[optional.ctor]` ¶28/¶33 from `optional<U>` |
+| `constructible_ref_from_external_value<T, U>` | `[optional.ref.ctor]` from `U` |
+| `constructible_ref_from_other_optional<T, U, Value>` | `[optional.ref.ctor]` from `optional<U>` |
+| `assignable_from_converted_value` / `assignable_from_optional_value` | `[optional.assign]` |
+| `optional_values_equal_comparable` / `optional_value_*` | `[optional.relops]`, `[optional.comp.with.t]` |
+| `hashable_optional_value` / `hashable_optional_ref_value` | `[optional.hash]` |
+
 ---
 
 ## Phase 1 — core

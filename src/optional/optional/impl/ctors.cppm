@@ -49,12 +49,7 @@ namespace std_impl::optional {
 
     template <typename T>
     template <typename U>
-        requires(std::constructible_from<typename optional<T>::value_type, U>
-            and not std::is_same_v<std::remove_cvref_t<U>, std::in_place_t>
-            and not std::is_same_v<std::remove_cvref_t<U>, optional<T>>
-            and not std::is_same_v<std::remove_cvref_t<U>, nullopt_t>
-            and (not std::is_same_v<typename optional<T>::value_type, bool>
-                or not is_optional<std::remove_cvref_t<U>>))
+        requires constructible_from_external_value<typename optional<T>::value_type, U>
     constexpr optional<T>::optional(U&& value) noexcept(
         std::is_nothrow_constructible_v<typename optional<T>::value_type, U>) {
         storage_.emplace(std::forward<U>(value));
@@ -62,9 +57,7 @@ namespace std_impl::optional {
 
     template <typename T>
     template <typename U>
-        requires(std::constructible_from<typename optional<T>::value_type, const U&>
-            and (std::is_same_v<typename optional<T>::value_type, bool>
-                or not converts_from_any_cvref<typename optional<T>::value_type, optional<U>>))
+        requires constructible_from_other_optional<typename optional<T>::value_type, U, const U&>
     constexpr optional<T>::optional(const optional<U>& other) {
         if (other.has_value()) {
             storage_.emplace(*other);
@@ -73,9 +66,7 @@ namespace std_impl::optional {
 
     template <typename T>
     template <typename U>
-        requires(std::constructible_from<typename optional<T>::value_type, U>
-            and (std::is_same_v<typename optional<T>::value_type, bool>
-                or not converts_from_any_cvref<typename optional<T>::value_type, optional<U>>))
+        requires constructible_from_other_optional<typename optional<T>::value_type, U, U>
     constexpr optional<T>::optional(optional<U>&& other) {
         if (other.has_value()) {
             storage_.emplace(std::move(*other));

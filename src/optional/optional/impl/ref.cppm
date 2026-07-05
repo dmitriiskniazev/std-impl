@@ -15,8 +15,7 @@ namespace std_impl::optional {
 
     template <typename T>
     template <typename U>
-        requires(not std::is_same_v<std::remove_cv_t<U>, optional<U>> and not std::is_same_v<T&, U>
-            and binds_reference_without_temporary<T&, U&>)
+        requires constructible_ref_from_other_optional<T, U, U&>
     constexpr optional<T&>::optional(optional<U>& rhs) noexcept(
         std::is_nothrow_constructible_v<T&, U&>) {
         if (rhs.has_value()) {
@@ -26,8 +25,7 @@ namespace std_impl::optional {
 
     template <typename T>
     template <typename U>
-        requires(not std::is_same_v<std::remove_cv_t<U>, optional<U>> and not std::is_same_v<T&, U>
-            and binds_reference_without_temporary<T&, const U&>)
+        requires constructible_ref_from_other_optional<T, U, const U&>
     constexpr optional<T&>::optional(const optional<U>& rhs) noexcept(
         std::is_nothrow_constructible_v<T&, const U&>) {
         if (rhs.has_value()) {
@@ -37,8 +35,7 @@ namespace std_impl::optional {
 
     template <typename T>
     template <typename U>
-        requires(not std::is_same_v<std::remove_cv_t<U>, optional<U>> and not std::is_same_v<T&, U>
-            and binds_reference_without_temporary<T&, U>)
+        requires constructible_ref_from_other_optional<T, U, U>
     constexpr optional<T&>::optional(optional<U>&& rhs) noexcept(
         std::is_nothrow_constructible_v<T&, U>) {
         if (rhs.has_value()) {
@@ -48,8 +45,7 @@ namespace std_impl::optional {
 
     template <typename T>
     template <typename U>
-        requires(not std::is_same_v<std::remove_cv_t<U>, optional<U>> and not std::is_same_v<T&, U>
-            and binds_reference_without_temporary<T&, const U>)
+        requires constructible_ref_from_other_optional<T, U, const U>
     constexpr optional<T&>::optional(const optional<U>&& rhs) noexcept(
         std::is_nothrow_constructible_v<T&, const U>) {
         if (rhs.has_value()) {
