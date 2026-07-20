@@ -1,5 +1,21 @@
-export module std_impl.expected;
+export module std_impl.expected:expected;
 
-export import :bad_expected_access;
-export import :unexpected;
-export import :expected;
+export import :expected.interface;
+import :expected.impl.and_then;
+import :expected.impl.ctor.in_place;
+import :expected.impl.ctor.unexpect;
+import :expected.impl.ctor.unexpected;
+import :expected.impl.ctor.value;
+import :expected.impl.error;
+import :expected.impl.error_or;
+import :expected.impl.has_error;
+import :expected.impl.has_value;
+import :expected.impl.operator_arrow;
+import :expected.impl.operator_bool;
+import :expected.impl.operator_star;
+import :expected.impl.or_else;
+import :expected.impl.swap;
+import :expected.impl.transform;
+import :expected.impl.transform_error;
+import :expected.impl.value;
+import :expected.impl.value_or;

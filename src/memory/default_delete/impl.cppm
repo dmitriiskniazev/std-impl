@@ -6,8 +6,7 @@ import :default_delete.interface;
 namespace std_impl {
     template <typename T>
     auto default_delete<T>::operator()(T* ptr) const -> void
-        requires impl::default_delete::deletable<T>
-    {
+        requires impl::default_delete::deletable<T> {
         delete ptr;
     }
 

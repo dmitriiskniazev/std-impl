@@ -1,4 +1,6 @@
-# Implementation checklist — expected
+# expected — implementation map
+
+> **Guide:** [expected](../guide/expected.md) (layers → files).
 
 Reference: [cppreference — expected](https://en.cppreference.com/w/cpp/utility/expected).
 
@@ -7,107 +9,68 @@ Reference: [cppreference — expected](https://en.cppreference.com/w/cpp/utility
 | Role | Path |
 |------|------|
 | Module sources | [src/expected/](../../src/expected/) |
-| Umbrella module | [src/expected/expected.cppm](../../src/expected/expected.cppm) |
-| `expected` facade | [expected/expected.cppm](../../src/expected/expected/expected.cppm) |
-| `expected` interface | [expected/interface.cppm](../../src/expected/expected/interface.cppm) |
-| `expected` impl | [expected/impl.cppm](../../src/expected/expected/impl.cppm) |
-| `storage` (impl of expected) | [expected/storage/](../../src/expected/expected/storage/) |
-| `bad_expected_access` | [bad_expected_access/](../../src/expected/bad_expected_access/) |
-| `unexpected` | [unexpected/](../../src/expected/unexpected/) |
+| Umbrella | [src/expected.cppm](../../src/expected.cppm) |
+| `expected<T,E>` facade | [expected/expected.cppm](../../src/expected/expected.cppm) |
+| `expected<T,E>` declarations | [expected/interface.cppm](../../src/expected/interface.cppm) |
+| `expected<T,E>` definitions | [expected/impl/](../../src/expected/impl/) |
+| `expected<void,E>` facade | [expected/void_.cppm](../../src/expected/void_.cppm) |
+| `expected<void,E>` | [expected/void_/](../../src/expected/void_/) |
 | Tests | [tests/expected/](../../tests/expected/) |
 | Examples | [examples/expected/](../../examples/expected/) |
-| CMake | [CMakeLists.txt](../../CMakeLists.txt) |
 
 ---
 
-## Import and namespaces
+## Import
 
 ```cpp
 import std;
-import std_impl;                    // via std_impl.cppm → std_impl.expected
-import std_impl.expected;      // granular
+import std_impl.expected;
 ```
 
-**Namespaces mirror the source tree** (same pattern as optional):
-
-| Path under `src/expected/` | Namespace | Public symbol |
-|------------------------------|-----------|---------------|
-| `expected/` | `std_impl::expected` | `expected`, `unexpect_t`, `unexpect`, `swap` |
-| `expected/storage/` | `std_impl::expected::storage` | `storage`, concepts |
-| `bad_expected_access/` | `std_impl::bad_expected_access` | `bad_expected_access` |
-| `unexpected/` | `std_impl::unexpected` | `unexpected` |
-
-Canonical spellings:
-
-```cpp
-std_impl::expected::expected<int, parse_error> port{443};
-std_impl::expected::unexpect;
-std_impl::bad_expected_access::bad_expected_access ex;
-std_impl::unexpected::unexpected(err);
-```
-
-At call sites, `using` declarations keep code readable (see [tests/expected/](../../tests/expected/)):
-
-```cpp
-using std_impl::expected::expected;
-using std_impl::expected::unexpect;
-using std_impl::unexpected::unexpected;
-
-expected<int, parse_error> port{443};
-return unexpected(parse_error::empty);
-```
-
-`std_impl::expected<T, E>` is **not** available: a namespace and a type alias cannot share the name `expected` in `std_impl`.
+| Path | Namespace |
+|------|-----------|
+| `expected/` | `std_impl::expected` |
+| `expected/detail/` | `std_impl::expected::detail` |
+| `expected/detail/storage/` | `std_impl::expected::detail::storage` |
+| `bad_expected_access.cppm` | `std_impl::bad_expected_access` |
+| `unexpected.cppm` | `std_impl::unexpected` |
 
 ---
 
-## Module layout pattern
+## Layout
 
-Every object uses the same layout relative to itself:
-
+```text
+src/
+  expected.cppm                     # std_impl.expected umbrella
+  expected/
+    expected.cppm                   # facade: export interface + import impl/*
+    interface.cppm                  # expected<T, E>
+    impl/<fn>.cppm                  # one out-of-line definition per file
+    void_.cppm                      # facade for expected<void, E>
+    void_/
+      interface.cppm                # constrained unexpected ctors in-class
+      impl/<fn>.cppm
+    unexpected.cppm
+    bad_expected_access.cppm
+    detail/
+      concepts.cppm                 # unexpect_t, distinct, converting concepts
+      require_value.cppm
+      require_error.cppm
+      make_error_result.cppm        # shared monadic error construction
+      construct_from_unexpected.cppm
+      copy_assign.cppm / move_assign.cppm / swap_engaged.cppm
+      storage/
+        traits.cppm
+        interface.cppm
+        impl.cppm
+        void_/interface.cppm
+        void_/impl.cppm
 ```
-<name>/
-  <name>.cppm          # facade: export interface + import impl
-  interface.cppm       # declarations
-  impl.cppm            # definitions (or impl/ for split bodies)
-```
 
-Implementation objects nest under the parent they serve:
+Module partitions: `:expected`, `:void_`, `:detail.storage`, `:unexpected`, `:bad_expected_access`, plus `:expected.impl.<fn>` / `:expected.void_.impl.<fn>`.
 
-```
-expected/
-  expected.cppm        # :expected facade
-  interface.cppm
-  impl.cppm
-  storage/             # impl object of expected — same layout as optional
-    storage.cppm
-    interface.cppm
-    impl.cppm
-    impl/
-      concepts.cppm
-      accessors.cppm
-      lifetime.cppm
-```
+**Clang caveat:** constrained `unexpected` constructors of `expected<void, E>` are defined **in-class** in `void_/interface.cppm`. Primary-template members keep class-level `requires distinct<T, E>` on the outer template of out-of-line definitions.
 
-Peer components (`unexpected`, `bad_expected_access`) are siblings under `src/expected/`, not nested inside `expected/expected/`.
+Monadic logic (`and_then`, `transform`, …) lives in the corresponding `impl/<fn>.cppm` files; only `make_error_result` is shared under `detail/`.
 
----
-
-## Phase 1 — core
-
-- [x] `unexpected`, CTAD
-- [x] `bad_expected_access`
-- [x] `expected` — value/error, `unexpect`, observers, `value_or`, `error_or`
-- [x] Monadic: `and_then`, `transform`, `transform_error`, `or_else`
-
----
-
-## Phase 2 — C++26 polish
-
-- [x] `expected<void, E>` — [interface.cppm](../../src/expected/expected/interface.cppm), [impl.void.cppm](../../src/expected/expected/impl.void.cppm); [expected_void_test.cpp](../../tests/expected/expected_void_test.cpp)
-- [x] `has_error()`
-- [ ] Public `emplace` / `emplace(unexpect, …)`
-- [ ] Comparisons (`operator==`, `<=>`) and `std::hash`
-- [ ] `bad_expected_access<E>` with stored error (C++26)
-
-Run `./scripts/ci.sh` before opening a PR.
+Run `./scripts/ci.sh` before changing implementation code.

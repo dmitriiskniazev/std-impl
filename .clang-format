@@ -7,7 +7,7 @@ IndentWidth: 4
 ContinuationIndentWidth: 4
 TabWidth: 4
 UseTab: Never
-ColumnLimit: 99
+ColumnLimit: 220
 
 MaxEmptyLinesToKeep: 1
 SeparateDefinitionBlocks: Always
@@ -21,7 +21,9 @@ BreakBeforeBraces: Custom
 BraceWrapping:
   AfterClass: false
   AfterFunction: false
-AllowShortFunctionsOnASingleLine: None
+  SplitEmptyFunction: false
+# Out-of-line definitions stay multi-line (template / signature / body); empty bodies may stay `void f() {}`.
+AllowShortFunctionsOnASingleLine: Empty
 AllowShortIfStatementsOnASingleLine: Never
 AllowShortLoopsOnASingleLine: true
 AllowShortBlocksOnASingleLine: false
@@ -38,6 +40,8 @@ BreakBeforeBinaryOperators: NonAssignment
 BreakBeforeTernaryOperators: true
 
 AlignAfterOpenBracket: DontAlign
+BreakAfterOpenBracketFunction: true
+BreakBeforeCloseBracketFunction: true
 AlignOperands: false
 
 FixNamespaceComments: false
@@ -54,8 +58,8 @@ SortIncludes: Never
 IncludeBlocks: Preserve
 
 IndentRequiresClause: true
-AlwaysBreakTemplateDeclarations: Yes
-BreakTemplateDeclarations: Yes
+RequiresClausePosition: OwnLineWithBrace
+BreakTemplateDeclarations: MultiLine
 BreakInheritanceList: AfterColon
 BreakConstructorInitializers: AfterColon
 PackConstructorInitializers: Never

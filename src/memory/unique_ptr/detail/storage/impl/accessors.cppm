@@ -3,15 +3,14 @@ import std;
 
 import :unique_ptr.detail.storage.interface;
 
-namespace std_impl::impl::unique_ptr {
+namespace std_impl::impl::unique_ptr::storage {
     template <typename Pointer, typename Deleter>
     constexpr auto storage<Pointer, Deleter>::ptr(this auto&& self) noexcept -> decltype(auto) {
         return std::forward_like<decltype(self)>(self.ptr_);
     }
 
     template <typename Pointer, typename Deleter>
-    constexpr auto storage<Pointer, Deleter>::deleter(this auto&& self) noexcept
-        -> decltype(auto) {
+    constexpr auto storage<Pointer, Deleter>::deleter(this auto&& self) noexcept -> decltype(auto) {
         return std::forward_like<decltype(self)>(self.deleter_);
     }
 
@@ -21,4 +20,4 @@ namespace std_impl::impl::unique_ptr {
         swap(ptr(), other.ptr());
         swap(deleter(), other.deleter());
     }
-}  // namespace std_impl::impl::unique_ptr
+}  // namespace std_impl::impl::unique_ptr::storage

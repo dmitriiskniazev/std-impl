@@ -5,8 +5,7 @@ import std;
 import std_impl.memory;
 
 namespace std {
-    template <typename T, typename CharT>
-    struct formatter<std_impl::shared_ptr<T>, CharT> {
+    template <typename T, typename CharT> struct formatter<std_impl::shared_ptr<T>, CharT> {
         formatter<const void*, CharT> ptr_;
 
         constexpr auto parse(std::basic_format_parse_context<CharT>& ctx) -> decltype(auto) {

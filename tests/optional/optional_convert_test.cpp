@@ -10,8 +10,7 @@ namespace {
         int value;
 
         explicit flag(int value_) :
-            value(value_) {
-        }
+            value(value_) {}
     };
 }  // namespace
 

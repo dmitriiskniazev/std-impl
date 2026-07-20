@@ -6,27 +6,21 @@ import :shared_ptr.detail.control_block.interface;
 import :unique_ptr.detail.concepts;
 
 namespace std_impl::impl::shared_ptr {
-    export template <typename T,
-        impl::unique_ptr::deleter Deleter,
-        impl::shared_ptr::allocator Alloc>
-    struct allocated_deleter_control_block final : control_block_base {
+    export template <typename T, impl::unique_ptr::deleter Deleter, impl::shared_ptr::allocator Alloc> struct allocated_deleter_control_block final : control_block_base {
         T* ptr_{nullptr};
         [[no_unique_address]] Deleter deleter_{};
-        using block_allocator = typename std::allocator_traits<Alloc>::
-            template rebind_alloc<allocated_deleter_control_block>;
+        using block_allocator = typename std::allocator_traits<Alloc>::template rebind_alloc<allocated_deleter_control_block>;
         [[no_unique_address]] block_allocator alloc_{};
 
         allocated_deleter_control_block(T* ptr, const Deleter& deleter, const Alloc& alloc) :
             ptr_{ptr},
             deleter_{deleter},
-            alloc_{alloc} {
-        }
+            alloc_{alloc} {}
 
         allocated_deleter_control_block(T* ptr, Deleter&& deleter, const Alloc& alloc) :
             ptr_{ptr},
             deleter_{std::move(deleter)},
-            alloc_{alloc} {
-        }
+            alloc_{alloc} {}
 
         auto destroy_object() noexcept -> void override {
             if (ptr_ != nullptr) {
@@ -49,17 +43,14 @@ namespace std_impl::impl::shared_ptr {
         }
     };
 
-    export template <typename T, impl::shared_ptr::allocator Alloc>
-    struct allocated_object_control_block final : control_block_base {
-        alignas(T) unsigned char storage_[sizeof(T)]{};
+    export template <typename T, impl::shared_ptr::allocator Alloc> struct allocated_object_control_block final : control_block_base {
+        alignas(T) std::byte storage_[sizeof(T)]{};
         bool constructed_{false};
-        using block_allocator = typename std::allocator_traits<Alloc>::
-            template rebind_alloc<allocated_object_control_block>;
+        using block_allocator = typename std::allocator_traits<Alloc>::template rebind_alloc<allocated_object_control_block>;
         [[no_unique_address]] block_allocator alloc_{};
 
         explicit allocated_object_control_block(const Alloc& alloc) :
-            alloc_{alloc} {
-        }
+            alloc_{alloc} {}
 
         [[nodiscard]] auto ptr() noexcept -> T* {
             return std::launder(reinterpret_cast<T*>(storage_));
@@ -94,11 +85,8 @@ namespace std_impl::impl::shared_ptr {
         }
     };
 
-    export template <typename T,
-        impl::unique_ptr::deleter Deleter,
-        impl::shared_ptr::allocator Alloc>
-    [[nodiscard]] auto make_allocated_deleter_control_block(
-        T* ptr, const Deleter& deleter, const Alloc& alloc) -> control_block_base* {
+    export template <typename T, impl::unique_ptr::deleter Deleter, impl::shared_ptr::allocator Alloc>
+    [[nodiscard]] auto make_allocated_deleter_control_block(T* ptr, const Deleter& deleter, const Alloc& alloc) -> control_block_base* {
         using block_type = allocated_deleter_control_block<T, Deleter, Alloc>;
         using block_allocator = typename block_type::block_allocator;
         block_allocator block_alloc{alloc};
@@ -106,11 +94,8 @@ namespace std_impl::impl::shared_ptr {
         return ::new (storage) block_type{ptr, deleter, alloc};
     }
 
-    export template <typename T,
-        impl::unique_ptr::deleter Deleter,
-        impl::shared_ptr::allocator Alloc>
-    [[nodiscard]] auto make_allocated_deleter_control_block(
-        T* ptr, Deleter&& deleter, const Alloc& alloc) -> control_block_base* {
+    export template <typename T, impl::unique_ptr::deleter Deleter, impl::shared_ptr::allocator Alloc>
+    [[nodiscard]] auto make_allocated_deleter_control_block(T* ptr, Deleter&& deleter, const Alloc& alloc) -> control_block_base* {
         using block_type = allocated_deleter_control_block<T, Deleter, Alloc>;
         using block_allocator = typename block_type::block_allocator;
         block_allocator block_alloc{alloc};
@@ -119,8 +104,7 @@ namespace std_impl::impl::shared_ptr {
     }
 
     export template <typename T, impl::shared_ptr::allocator Alloc, typename... Args>
-    [[nodiscard]] auto make_allocated_object_control_block(const Alloc& alloc, Args&&... args)
-        -> allocated_object_control_block<T, Alloc>* {
+    [[nodiscard]] auto make_allocated_object_control_block(const Alloc& alloc, Args&&... args) -> allocated_object_control_block<T, Alloc>* {
         using block_type = allocated_object_control_block<T, Alloc>;
         using block_allocator = typename block_type::block_allocator;
         block_allocator block_alloc{alloc};
@@ -130,9 +114,7 @@ namespace std_impl::impl::shared_ptr {
         return block;
     }
 
-    export template <typename T, impl::shared_ptr::allocator Alloc>
-    [[nodiscard]] auto make_allocated_object_control_block_for_overwrite(const Alloc& alloc)
-        -> allocated_object_control_block<T, Alloc>* {
+    export template <typename T, impl::shared_ptr::allocator Alloc> [[nodiscard]] auto make_allocated_object_control_block_for_overwrite(const Alloc& alloc) -> allocated_object_control_block<T, Alloc>* {
         using block_type = allocated_object_control_block<T, Alloc>;
         using block_allocator = typename block_type::block_allocator;
         block_allocator block_alloc{alloc};

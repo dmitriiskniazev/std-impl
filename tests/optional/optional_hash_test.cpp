@@ -17,8 +17,7 @@ auto main() -> int {
     }
 
     {
-        std::unordered_set<optional<int>> ports{
-            optional<int>{443}, optional<int>{80}, optional<int>{}};
+        std::unordered_set<optional<int>> ports{optional<int>{443}, optional<int>{80}, optional<int>{}};
         assert(ports.contains(optional<int>{443}));
         assert(ports.contains(optional<int>{}));
         assert(not ports.contains(optional<int>{8080}));
@@ -32,8 +31,7 @@ auto main() -> int {
         const optional<int&> different_storage{std::in_place, other};
 
         assert(std::hash<optional<int&>>{}(bound) == std::hash<optional<int&>>{}(same_value));
-        assert(
-            std::hash<optional<int&>>{}(bound) == std::hash<optional<int&>>{}(different_storage));
+        assert(std::hash<optional<int&>>{}(bound) == std::hash<optional<int&>>{}(different_storage));
     }
 
     return 0;

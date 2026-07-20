@@ -4,8 +4,7 @@ import std;
 import :shared_ptr.interface;
 
 namespace std_impl {
-    export template <typename T>
-    class weak_ptr {
+    export template <typename T> class weak_ptr {
     public:
         constexpr weak_ptr() noexcept = default;
 
@@ -31,11 +30,9 @@ namespace std_impl {
         [[nodiscard]] auto owner_equals(const weak_ptr& other) const noexcept -> bool;
 
     private:
-        template <typename U>
-        friend class shared_ptr;
+        template <typename U> friend class shared_ptr;
 
-        template <typename U>
-        friend class enable_shared_from_this;
+        template <typename U> friend class enable_shared_from_this;
 
         template <typename U>
         friend auto assign_enable_shared_from_this(shared_ptr<U>& sp, U* ptr) noexcept -> void;
@@ -46,11 +43,9 @@ namespace std_impl {
         impl::shared_ptr::control_block_base* control_{nullptr};
     };
 
-    export template <typename T>
-    auto swap(weak_ptr<T>& lhs, weak_ptr<T>& rhs) noexcept -> void;
+    export template <typename T> auto swap(weak_ptr<T>& lhs, weak_ptr<T>& rhs) noexcept -> void;
 
     export template <typename T>
         requires std::three_way_comparable<T*>
-    auto operator<=>(const weak_ptr<T>& lhs, std::nullptr_t) noexcept
-        -> std::compare_three_way_result_t<T*>;
+    auto operator<=>(const weak_ptr<T>& lhs, std::nullptr_t) noexcept -> std::compare_three_way_result_t<T*>;
 }  // namespace std_impl

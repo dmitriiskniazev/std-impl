@@ -1,9 +1,8 @@
 export module std_impl.memory:unique_ptr.detail.storage.interface;
 import std;
 
-namespace std_impl::impl::unique_ptr {
-    export template <typename Pointer, typename Deleter>
-    struct storage {
+namespace std_impl::impl::unique_ptr::storage {
+    export template <typename Pointer, typename Deleter> struct storage {
         Pointer ptr_{};
         [[no_unique_address]] Deleter deleter_{};
 
@@ -18,4 +17,4 @@ namespace std_impl::impl::unique_ptr {
 
         constexpr auto swap(storage& other) noexcept -> void;
     };
-}  // namespace std_impl::impl::unique_ptr
+}  // namespace std_impl::impl::unique_ptr::storage

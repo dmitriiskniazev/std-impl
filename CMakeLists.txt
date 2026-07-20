@@ -22,7 +22,7 @@ target_sources(std_impl
             src/memory/default_delete/detail/concepts.cppm
             src/memory/default_delete/interface.cppm
             src/memory/default_delete/impl.cppm
-            src/memory/default_delete.cppm
+            src/memory/default_delete/default_delete.cppm
             src/memory/unique_ptr/detail/concepts.cppm
             src/memory/unique_ptr/detail/pointer.cppm
             src/memory/unique_ptr/detail/storage/interface.cppm
@@ -33,8 +33,10 @@ target_sources(std_impl
             src/memory/unique_ptr/detail/storage.cppm
             src/memory/unique_ptr/interface.cppm
             src/memory/unique_ptr/impl.cppm
-            src/memory/unique_ptr.cppm
-            src/memory/make_unique.cppm
+            src/memory/unique_ptr/unique_ptr.cppm
+            src/memory/make_unique/interface.cppm
+            src/memory/make_unique/impl.cppm
+            src/memory/make_unique/make_unique.cppm
             src/memory/shared_ptr/detail/concepts.cppm
             src/memory/shared_ptr/detail/control_block/interface.cppm
             src/memory/shared_ptr/detail/control_block/impl/base.cppm
@@ -47,65 +49,146 @@ target_sources(std_impl
             src/memory/shared_ptr/interface.cppm
             src/memory/weak_ptr/interface.cppm
             src/memory/enable_shared_from_this/interface.cppm
+            src/memory/enable_shared_from_this/impl.cppm
             src/memory/shared_ptr/impl.cppm
-            src/memory/shared_ptr/impl.array.cppm
+            src/memory/shared_ptr/impl/array.cppm
             src/memory/weak_ptr/impl.cppm
-            src/memory/shared_ptr.cppm
-            src/memory/weak_ptr.cppm
-            src/memory/enable_shared_from_this.cppm
-            src/memory/make_shared.cppm
-            src/memory/allocate_shared.cppm
+            src/memory/shared_ptr/shared_ptr.cppm
+            src/memory/weak_ptr/weak_ptr.cppm
+            src/memory/enable_shared_from_this/enable_shared_from_this.cppm
+            src/memory/make_shared/interface.cppm
+            src/memory/make_shared/impl.cppm
+            src/memory/make_shared/make_shared.cppm
+            src/memory/allocate_shared/interface.cppm
+            src/memory/allocate_shared/impl.cppm
+            src/memory/allocate_shared/allocate_shared.cppm
             src/memory/bad_weak_ptr/interface.cppm
             src/memory/bad_weak_ptr/impl.cppm
-            src/memory/bad_weak_ptr.cppm
-            src/memory/pointer_cast.cppm
+            src/memory/bad_weak_ptr/bad_weak_ptr.cppm
+            src/memory/pointer_cast/interface.cppm
+            src/memory/pointer_cast/impl.cppm
+            src/memory/pointer_cast/pointer_cast.cppm
             src/memory/memory.cppm
             src/format/format.cppm
             src/format/unique_ptr.cppm
             src/format/shared_ptr.cppm
             src/format/weak_ptr.cppm
-            src/optional/optional/storage/storage.cppm
-            src/optional/optional/storage/interface.cppm
-            src/optional/optional/storage/impl.cppm
-            src/optional/optional/storage/impl/concepts.cppm
-            src/optional/optional/storage/impl/ctors.cppm
-            src/optional/optional/storage/impl/accessors.cppm
-            src/optional/optional/storage/impl/lifetime.cppm
-            src/optional/optional/detail/concepts.cppm
-            src/optional/optional/interface.cppm
-            src/optional/optional/optional.cppm
-            src/optional/optional/impl/ctors.cppm
-            src/optional/optional/impl/assign.cppm
-            src/optional/optional/impl/observers.cppm
-            src/optional/optional/impl/modifiers.cppm
-            src/optional/optional/impl/monadic.cppm
-            src/optional/optional/impl/ref.cppm
-            src/optional/optional/impl/relops.cppm
-            src/optional/optional/impl/hash.cppm
-            src/optional/bad_optional_access/bad_optional_access.cppm
-            src/optional/bad_optional_access/interface.cppm
-            src/optional/bad_optional_access/impl.cppm
-            src/optional/make_optional/make_optional.cppm
-            src/optional/make_optional/interface.cppm
-            src/optional/make_optional/impl.cppm
+            src/optional/detail/concepts.cppm
+            src/optional/detail/require_value.cppm
+            src/optional/detail/storage/traits.cppm
+            src/optional/detail/storage/interface.cppm
+            src/optional/detail/storage/impl.cppm
+            src/optional/detail/storage.cppm
+            src/optional/bad_optional_access.cppm
+            src/optional/make_optional.cppm
+            src/optional/interface.cppm
+            src/optional/impl/ctor.default.cppm
+            src/optional/impl/ctor.nullopt.cppm
+            src/optional/impl/ctor.copy.cppm
+            src/optional/impl/ctor.move.cppm
+            src/optional/impl/ctor.value.cppm
+            src/optional/impl/ctor.in_place.cppm
+            src/optional/impl/ctor.convert.cppm
+            src/optional/impl/ctor.from_optional.cppm
+            src/optional/impl/assign.nullopt.cppm
+            src/optional/impl/assign.copy.cppm
+            src/optional/impl/assign.move.cppm
+            src/optional/impl/assign.value.cppm
+            src/optional/impl/assign.convert.cppm
+            src/optional/impl/assign.from_optional.cppm
+            src/optional/impl/has_value.cppm
+            src/optional/impl/operator_bool.cppm
+            src/optional/impl/value.cppm
+            src/optional/impl/operator_star.cppm
+            src/optional/impl/operator_arrow.cppm
+            src/optional/impl/value_or.cppm
+            src/optional/impl/emplace.cppm
+            src/optional/impl/reset.cppm
+            src/optional/impl/swap.cppm
+            src/optional/impl/and_then.cppm
+            src/optional/impl/transform.cppm
+            src/optional/impl/or_else.cppm
+            src/optional/impl/operator_eq.cppm
+            src/optional/impl/operator_spaceship.cppm
+            src/optional/impl/operator_eq_nullopt.cppm
+            src/optional/impl/operator_spaceship_nullopt.cppm
+            src/optional/impl/operator_eq_value.cppm
+            src/optional/impl/operator_spaceship_value.cppm
+            src/optional/impl/hash.cppm
             src/optional/optional.cppm
-            src/expected/bad_expected_access/interface.cppm
-            src/expected/bad_expected_access/impl.cppm
-            src/expected/bad_expected_access.cppm
-            src/expected/unexpected/interface.cppm
-            src/expected/unexpected/impl.cppm
+            src/optional/ref_/interface.cppm
+            src/optional/ref_/impl/ctor.nullopt.cppm
+            src/optional/ref_/impl/assign.nullopt.cppm
+            src/optional/ref_/impl/assign.copy.cppm
+            src/optional/ref_/impl/assign.move.cppm
+            src/optional/ref_/impl/has_value.cppm
+            src/optional/ref_/impl/operator_bool.cppm
+            src/optional/ref_/impl/value.cppm
+            src/optional/ref_/impl/operator_star.cppm
+            src/optional/ref_/impl/operator_arrow.cppm
+            src/optional/ref_/impl/value_or.cppm
+            src/optional/ref_/impl/reset.cppm
+            src/optional/ref_/impl/swap.cppm
+            src/optional/ref_/impl/convert_ref_init_val.cppm
+            src/optional/ref_/impl/and_then.cppm
+            src/optional/ref_/impl/transform.cppm
+            src/optional/ref_/impl/or_else.cppm
+            src/optional/ref_.cppm
+            src/optional.cppm
+            src/expected/detail/concepts.cppm
+            src/expected/detail/require_value.cppm
+            src/expected/detail/require_error.cppm
+            src/expected/detail/make_error_result.cppm
+            src/expected/detail/construct_from_unexpected.cppm
+            src/expected/detail/copy_assign.cppm
+            src/expected/detail/move_assign.cppm
+            src/expected/detail/swap_engaged.cppm
+            src/expected/detail/storage/traits.cppm
+            src/expected/detail/storage/interface.cppm
+            src/expected/detail/storage/impl.cppm
+            src/expected/detail/storage/void_/interface.cppm
+            src/expected/detail/storage/void_/impl.cppm
+            src/expected/detail/storage.cppm
             src/expected/unexpected.cppm
-            src/expected/expected/storage/impl/concepts.cppm
-            src/expected/expected/storage/interface.cppm
-            src/expected/expected/storage/impl/accessors.cppm
-            src/expected/expected/storage/impl/lifetime.cppm
-            src/expected/expected/storage/impl.cppm
-            src/expected/expected/storage/storage.cppm
-            src/expected/expected/interface.cppm
-            src/expected/expected/impl.cppm
-            src/expected/expected/impl.void.cppm
-            src/expected/expected/expected.cppm
+            src/expected/bad_expected_access.cppm
+            src/expected/interface.cppm
+            src/expected/impl/ctor.value.cppm
+            src/expected/impl/ctor.in_place.cppm
+            src/expected/impl/ctor.unexpected.cppm
+            src/expected/impl/ctor.unexpect.cppm
+            src/expected/impl/has_value.cppm
+            src/expected/impl/has_error.cppm
+            src/expected/impl/operator_bool.cppm
+            src/expected/impl/value.cppm
+            src/expected/impl/error.cppm
+            src/expected/impl/operator_star.cppm
+            src/expected/impl/operator_arrow.cppm
+            src/expected/impl/value_or.cppm
+            src/expected/impl/error_or.cppm
+            src/expected/impl/and_then.cppm
+            src/expected/impl/transform.cppm
+            src/expected/impl/transform_error.cppm
+            src/expected/impl/or_else.cppm
+            src/expected/impl/swap.cppm
             src/expected/expected.cppm
+            src/expected/void_/interface.cppm
+            src/expected/void_/impl/ctor.copy.cppm
+            src/expected/void_/impl/ctor.move.cppm
+            src/expected/void_/impl/assign.copy.cppm
+            src/expected/void_/impl/assign.move.cppm
+            src/expected/void_/impl/ctor.unexpect.cppm
+            src/expected/void_/impl/has_value.cppm
+            src/expected/void_/impl/has_error.cppm
+            src/expected/void_/impl/operator_bool.cppm
+            src/expected/void_/impl/value.cppm
+            src/expected/void_/impl/error.cppm
+            src/expected/void_/impl/and_then.cppm
+            src/expected/void_/impl/transform.cppm
+            src/expected/void_/impl/transform_error.cppm
+            src/expected/void_/impl/or_else.cppm
+            src/expected/void_/impl/swap.cppm
+            src/expected/void_.cppm
+            src/expected.cppm
             src/std_impl.cppm
 )
 target_include_directories(std_impl PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

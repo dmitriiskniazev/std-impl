@@ -29,18 +29,16 @@ namespace std_impl {
     shared_ptr<T>::shared_ptr(T* ptr, Deleter deleter, const Alloc& alloc) :
         ptr_{ptr} {
         if (ptr != nullptr) {
-            control_ = impl::shared_ptr::make_allocated_deleter_control_block(
-                ptr, std::move(deleter), alloc);
+            control_ = impl::shared_ptr::make_allocated_deleter_control_block(ptr, std::move(deleter), alloc);
             assign_enable_shared_from_this(*this, ptr);
         }
     }
 
     template <typename T>
-    shared_ptr<T>::shared_ptr(
-        T* ptr, impl::shared_ptr::control_block_base* control, const bool add_ref) noexcept :
+    shared_ptr<T>::shared_ptr(T* ptr, impl::shared_ptr::control_block_base* control, const bool add_ref) noexcept :
         ptr_{ptr},
         control_{control} {
-        if (control_ != nullptr && add_ref) {
+        if (control_ != nullptr and add_ref) {
             control_->add_strong_ref();
         }
     }
@@ -99,11 +97,9 @@ namespace std_impl {
         ptr_{other.release()} {
         if (ptr_ != nullptr) {
             if constexpr (std::is_reference_v<Deleter>) {
-                control_ = impl::shared_ptr::make_deleter_control_block(
-                    ptr_, std::ref(other.get_deleter()));
+                control_ = impl::shared_ptr::make_deleter_control_block(ptr_, std::ref(other.get_deleter()));
             } else {
-                control_ = impl::shared_ptr::make_deleter_control_block(
-                    ptr_, std::move(other.get_deleter()));
+                control_ = impl::shared_ptr::make_deleter_control_block(ptr_, std::move(other.get_deleter()));
             }
             assign_enable_shared_from_this(*this, ptr_);
         }
@@ -219,15 +215,13 @@ namespace std_impl {
 
     template <typename T1, typename T2>
         requires std::three_way_comparable_with<T1*, T2*>
-    auto operator<=>(const shared_ptr<T1>& lhs, const shared_ptr<T2>& rhs) noexcept
-        -> std::compare_three_way_result_t<T1*, T2*> {
+    auto operator<=>(const shared_ptr<T1>& lhs, const shared_ptr<T2>& rhs) noexcept -> std::compare_three_way_result_t<T1*, T2*> {
         return lhs.get() <=> rhs.get();
     }
 
     template <typename T>
         requires std::three_way_comparable<T*>
-    auto operator<=>(const shared_ptr<T>& lhs, std::nullptr_t) noexcept
-        -> std::compare_three_way_result_t<T*> {
+    auto operator<=>(const shared_ptr<T>& lhs, std::nullptr_t) noexcept -> std::compare_three_way_result_t<T*> {
         return lhs.get() <=> static_cast<T*>(nullptr);
     }
 

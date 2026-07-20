@@ -12,8 +12,12 @@ ctest --test-dir build -R '^std_impl_'
 ./scripts/build-docs.sh
 ```
 
+## Format on save
+
+Plain `clang-format` drops the post-format pass. Use [`.vscode/settings.json`](.vscode/settings.json) with `scripts/clang-format-wrapper.sh`.
+
 ## Pitfalls
 
-- No `#include` — `import std;` and `import std_impl;`
+- No `#include` — `import std;` and module imports
 - Apple Clang is not supported — Homebrew LLVM only
 - Not ISO C++ — compare with standard wording and libc++
