@@ -10,8 +10,7 @@ namespace {
         int n = 0;
 
         explicit counter(int n_) :
-            n(n_) {
-        }
+            n(n_) {}
 
         counter(const counter&) = default;
         auto operator=(const counter&) -> counter& = default;

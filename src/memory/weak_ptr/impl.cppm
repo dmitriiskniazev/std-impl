@@ -64,12 +64,11 @@ namespace std_impl {
     template <typename T>
     weak_ptr<T>::weak_ptr(T* ptr, impl::shared_ptr::control_block_base* control) noexcept :
         ptr_{ptr},
-        control_{control} {
-    }
+        control_{control} {}
 
     template <typename T>
     auto weak_ptr<T>::expired() const noexcept -> bool {
-        return control_ == nullptr || control_->expired();
+        return control_ == nullptr or control_->expired();
     }
 
     template <typename T>
@@ -79,7 +78,7 @@ namespace std_impl {
 
     template <typename T>
     auto weak_ptr<T>::lock() const -> shared_ptr<T> {
-        if (control_ == nullptr || not control_->try_add_strong_ref()) {
+        if (control_ == nullptr or not control_->try_add_strong_ref()) {
             return {};
         }
         return shared_ptr<T>::adopt(ptr_, control_);
@@ -114,8 +113,7 @@ namespace std_impl {
 
     template <typename T>
         requires std::three_way_comparable<T*>
-    auto operator<=>(const weak_ptr<T>& lhs, std::nullptr_t) noexcept
-        -> std::compare_three_way_result_t<T*> {
+    auto operator<=>(const weak_ptr<T>& lhs, std::nullptr_t) noexcept -> std::compare_three_way_result_t<T*> {
         if (lhs.expired()) {
             return static_cast<T*>(nullptr) <=> static_cast<T*>(nullptr);
         }

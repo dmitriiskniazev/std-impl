@@ -4,9 +4,8 @@ import std;
 import :shared_ptr.detail.control_block.interface;
 
 namespace std_impl::impl::shared_ptr {
-    export template <typename T>
-    struct object_control_block final : control_block_base {
-        alignas(T) unsigned char storage_[sizeof(T)]{};
+    export template <typename T> struct object_control_block final : control_block_base {
+        alignas(T) std::byte storage_[sizeof(T)]{};
         bool constructed_{false};
 
         [[nodiscard]] auto ptr() noexcept -> T* {
@@ -40,15 +39,13 @@ namespace std_impl::impl::shared_ptr {
         }
     };
 
-    export template <typename T, typename... Args>
-    [[nodiscard]] auto make_object_control_block(Args&&... args) -> object_control_block<T>* {
+    export template <typename T, typename... Args> [[nodiscard]] auto make_object_control_block(Args&&... args) -> object_control_block<T>* {
         auto* block = new object_control_block<T>{};
         block->construct(std::forward<Args>(args)...);
         return block;
     }
 
-    export template <typename T>
-    [[nodiscard]] auto make_object_control_block_for_overwrite() -> object_control_block<T>* {
+    export template <typename T> [[nodiscard]] auto make_object_control_block_for_overwrite() -> object_control_block<T>* {
         auto* block = new object_control_block<T>{};
         block->construct_for_overwrite();
         return block;

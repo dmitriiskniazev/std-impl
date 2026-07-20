@@ -12,7 +12,8 @@ while IFS= read -r -d '' file; do
     fi
 done < <(
     for tree in src tests examples; do
-        [[ -d "$tree" ]] && find "$tree" -type f \( -name '*.cpp' -o -name '*.cppm' \) -print0
+        [[ -d "$tree" ]] || continue
+        find "$tree" -type f \( -name '*.cpp' -o -name '*.cppm' \) -print0
     done
 )
 

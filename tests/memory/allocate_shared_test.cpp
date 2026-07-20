@@ -42,8 +42,7 @@ namespace {
         }
     };
 
-    template <typename T>
-    struct counting_allocator {
+    template <typename T> struct counting_allocator {
         using value_type = T;
 
         int* allocate_count{nullptr};
@@ -53,14 +52,12 @@ namespace {
 
         counting_allocator(int* allocate_count_, int* deallocate_count_) noexcept :
             allocate_count{allocate_count_},
-            deallocate_count{deallocate_count_} {
-        }
+            deallocate_count{deallocate_count_} {}
 
         template <typename U>
         counting_allocator(const counting_allocator<U>& other) noexcept :
             allocate_count{other.allocate_count},
-            deallocate_count{other.deallocate_count} {
-        }
+            deallocate_count{other.deallocate_count} {}
 
         [[nodiscard]] auto allocate(std::size_t count) -> T* {
             if (allocate_count != nullptr) {
@@ -76,8 +73,7 @@ namespace {
             std::allocator<T>{}.deallocate(pointer, count);
         }
 
-        template <typename U>
-        struct rebind {
+        template <typename U> struct rebind {
             using other = counting_allocator<U>;
         };
     };
@@ -123,8 +119,7 @@ auto main() -> int {
         int block_deallocations = 0;
         counting_allocator<destruction_log> block_alloc{&block_allocations, &block_deallocations};
 
-        std_impl::shared_ptr<destruction_log> owner{
-            new destruction_log, logging_deleter{}, block_alloc};
+        std_impl::shared_ptr<destruction_log> owner{new destruction_log, logging_deleter{}, block_alloc};
         assert(block_allocations == 1);
         owner.reset();
         assert(logging_deleter::times == 1);

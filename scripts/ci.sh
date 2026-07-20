@@ -8,6 +8,7 @@ build_dir="${BUILD_DIR:-build}"
 
 ./scripts/format-check.sh
 ./scripts/check-no-includes.sh
+./scripts/check-alternative-operators.sh
 
 if [[ -z "${CMAKE_CXX_COMPILER:-}" ]]; then
     if [[ -x /opt/homebrew/opt/llvm/bin/clang++ ]]; then

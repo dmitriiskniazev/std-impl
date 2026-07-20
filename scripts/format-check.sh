@@ -9,15 +9,12 @@ if ! command -v clang-format >/dev/null 2>&1; then
     exit 1
 fi
 
-normalize="$root/scripts/normalize-cpp-blank-lines.py"
-style="$root/.clang-format"
 failed=0
 
 while IFS= read -r -d '' file; do
-    expected="$(mktemp)"
+    expected="$(mktemp "${TMPDIR:-/tmp}/std-impl-fmt.XXXXXX.cppm")"
     cp "$file" "$expected"
-    python3 "$normalize" "$expected"
-    clang-format --style="file:$style" -i "$expected"
+    "$root/scripts/format-file.sh" "$expected"
     if ! diff -q "$file" "$expected" >/dev/null 2>&1; then
         echo "format check failed: $file" >&2
         failed=1

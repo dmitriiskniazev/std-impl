@@ -8,8 +8,7 @@ namespace {
         std::string title;
 
         explicit document(std::string title_) :
-            title(std::move(title_)) {
-        }
+            title(std::move(title_)) {}
     };
 
     struct destruction_log {

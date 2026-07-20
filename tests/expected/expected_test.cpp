@@ -49,8 +49,7 @@ auto main() -> int {
     assert(recovered.has_value() and recovered.value() == 8080);
 
     const auto chained = ok.and_then([](int port) -> expected<int, parse_error> {
-        return port > 0 ? expected<int, parse_error>{port + 1}
-                        : unexpected(parse_error::invalid_char);
+        return port > 0 ? expected<int, parse_error>{port + 1} : unexpected(parse_error::invalid_char);
     });
     assert(chained.has_value() and chained.value() == 444);
 
@@ -62,6 +61,19 @@ auto main() -> int {
 
     expected<int, parse_error> in_place{unexpect, parse_error::empty};
     assert(not in_place and in_place.error() == parse_error::empty);
+
+    struct large_value {
+        std::array<int, 16> data{};
+    };
+
+    struct medium_error {
+        std::array<char, 32> message{};
+    };
+
+    // Union layout: max(T, E) + flag — not sizeof(T) + sizeof(E) + flag (dual buffer).
+    static_assert(sizeof(expected<large_value, medium_error>) < sizeof(large_value) + sizeof(medium_error));
+    static_assert(sizeof(expected<large_value, medium_error>) <= sizeof(large_value) + sizeof(bool) + alignof(large_value));
+    static_assert(sizeof(expected<int, parse_error>) <= sizeof(int) + sizeof(bool) + alignof(int));
 
     return 0;
 }

@@ -1,8 +1,17 @@
 # std-impl documentation
 
-Reference implementations of C++ standard library components (`<memory>`, `<optional>`, `<expected>`, …).
+Full implementations in `src/` (`import std_impl.*`). Guides explain how to read the code layer by layer.
 
 > Not affiliated with ISO C++. For study and comparison with [libc++](https://github.com/llvm/llvm-project/tree/main/libcxx).
+
+```{toctree}
+:maxdepth: 1
+:caption: Guide
+
+guide/index
+guide/cpp26
+guide/expected
+```
 
 ```{toctree}
 :maxdepth: 2
@@ -14,10 +23,11 @@ ARCHITECTURE
 
 ```{toctree}
 :maxdepth: 1
-:caption: Components
+:caption: Implementation maps
 
 memory/IMPLEMENTATION
 optional/IMPLEMENTATION
+optional/REFERENCE
 expected/IMPLEMENTATION
 ```
 
@@ -28,7 +38,7 @@ expected/IMPLEMENTATION
 # → docs/_build/html/
 ```
 
-## Code
+## Build & test
 
 ```bash
 cmake -B build -G Ninja && cmake --build build

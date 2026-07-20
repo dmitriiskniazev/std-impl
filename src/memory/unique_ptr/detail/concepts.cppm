@@ -6,8 +6,7 @@ namespace std_impl::impl::unique_ptr {
     concept complete_type = requires { sizeof(T); };
 
     export template <typename Deleter>
-    concept deleter =
-        not std::is_rvalue_reference_v<Deleter> and std::is_nothrow_destructible_v<Deleter>;
+    concept deleter = not std::is_rvalue_reference_v<Deleter> and std::is_nothrow_destructible_v<Deleter>;
 
     export template <typename Pointer>
     concept dereferenceable = requires(Pointer ptr) { *ptr; };

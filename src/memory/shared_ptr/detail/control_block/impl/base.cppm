@@ -36,8 +36,7 @@ namespace std_impl::impl::shared_ptr {
     inline auto control_block_base::try_add_strong_ref() noexcept -> bool {
         auto strong = strong_.load(std::memory_order_acquire);
         while (strong != 0) {
-            if (strong_.compare_exchange_weak(
-                    strong, strong + 1, std::memory_order_acq_rel, std::memory_order_acquire)) {
+            if (strong_.compare_exchange_weak(strong, strong + 1, std::memory_order_acq_rel, std::memory_order_acquire)) {
                 return true;
             }
         }
